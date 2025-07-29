@@ -9,76 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Update.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Update.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/162xcjwiuk-hsy2wcoyvu.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/20ew0x12oe-jjeqiwbt5m.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/2ny347pp8d-nbcv99fvkf.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/5x9vdd71dm-h7w86k4ubp.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/6gvdhbtcqz-gtj45mk798.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/6or1chz28v-r3ba0gx3aq.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/84akpnsj2n-q3qacqxgs2.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/8fp7cu8k11-p8p9eymv38.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/94vl7458e1-4z2waq50h3.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/9thngwlgam-hvucw3c2vo.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/a59fdxoo4f-luroics1an.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/biosuc2mgy-h11nlymlf8.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/dgo3qx09or-vl4r0vvijd.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/dimpx4e3ar-1s0zz149co.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/h6tliqi0wl-h85m06otfp.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/hwit5id961-uljx8a5dq0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/inxs6h3em5-g6olimu16d.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/isvcg3bj1a-zg8p7es40w.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/kfoax3gqi5-kwosyqxob3.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/knc1f4w4g6-3wf9jsyi0w.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/llhpj8v28c-hcbedftzhb.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/mm3jj99k8h-3rfbtach74.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/mv1vzq3fil-t8e3rdvlsr.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/myo4258wsi-p6wzfdkjk2.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/otaqga3el2-nygaq2a72e.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/oyxwar1l7x-01xxeupry7.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/r3msjyl8bj-55wfwida9r.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/shn799anaq-q6141l1wxr.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/svaldt9vh7-y2nb1bsekc.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/sxhtz9z1zn-3rqe6wzkfj.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/u9u34ahejg-idkuimg1hz.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/ussjlhwim8-zcu0nhejkx.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/v0dwmdlgdp-9g1plqgm9g.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/w13fgsoz1k-veggc92pyo.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/wtdcp0rpcp-9ob65zasyo.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/ym1aztr0cj-5h3l9su5e7.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/yywx2u14ki-vrk57bt7nk.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rbcswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjimswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjimswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +137,7 @@
       <workItem from="1753773740674" duration="180000" />
       <workItem from="1753773941098" duration="8653000" />
       <workItem from="1753788172086" duration="472000" />
-      <workItem from="1753798550157" duration="3168000" />
+      <workItem from="1753798550157" duration="6437000" />
     </task>
     <servers />
   </component>

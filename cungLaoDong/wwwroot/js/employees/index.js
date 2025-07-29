@@ -563,19 +563,19 @@ function applyCustomFilter() {
     });
 
     $('#dataTable').DataTable().draw();
-    $('#filterModal').hide();
 }
 
 $(document).ready(function () {
     displayLaborList(laborDemo);
 
     $('#resetFilter').click(function () {
-        $('#filterForm')[0].reset();
+        $('#filterForm').trigger('reset');
         $('#dataTable').DataTable().draw();
     })
 
     $('#applyFilter').click(function () {
         applyCustomFilter();
-        $('#filterModal').hide();
+        const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('filterModal'));
+        modal.hide();
     })
 })
