@@ -34,4 +34,10 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View(model: context.ProfessionalQualificationsModels.ToList());
     }
+
+    // GET
+    public IActionResult EconomyStatus()
+    {
+        return View(model: context.EconomyStatusModels.ToList());
+    }
 }
