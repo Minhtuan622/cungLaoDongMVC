@@ -8,10 +8,17 @@ namespace cungLaoDong.Controllers
         {
             return View();
         }
+        
+        public IActionResult Update()
+        {
+            return View();
+        }
+        
         public IActionResult ChangePassword()
         {
             return View();
         }
+        
         public IActionResult ActivityLog()
         {
             return View();

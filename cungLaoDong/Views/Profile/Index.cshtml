@@ -1,8 +1,59 @@
-@model dynamic
-
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 fw-bold text-primary">Thông tin tài khoản Admin</h6>
+        <a asp-controller="Profile" asp-action="Update" class="btn btn-sm btn-primary">
+            <i class="fas fa-pen"></i> Sửa thông tin
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <label class="fw-bold mb-4">Ảnh đại diện</label>
+                <div class="mb-3">
+                    <img src="img/undraw_profile.svg" alt="Avatar" class="rounded-circle border"
+                         style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mb-2">
+                    <label class="fw-bold mb-1">Họ và tên:</label>
+                    <div class="ps-2">Douglas McGee</div>
+                </div>
+                <div class="mb-2">
+                    <label class="fw-bold mb-1">Email:</label>
+                    <div class="ps-2">admin@domain.com</div>
+                </div>
+                <div class="mb-2">
+                    <label class="fw-bold mb-1">Số điện thoại:</label>
+                    <div class="ps-2">0123456789</div>
+                </div>
+                <div class="mb-2">
+                    <label class="fw-bold mb-1">Vai trò:</label>
+                    <div class="ps-2">Quản trị viên</div>
+                </div>
+                <div class="mb-2">
+                    <label class="fw-bold mb-1">Chức vụ:</label>
+                    <div class="ps-2">Quản lý hệ thống thông tin phòng TTTT.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 fw-bold text-primary">Hoạt động gần đây</h6>
+    </div>
+    <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-sign-in-alt text-success me-2"></i> Đăng nhập lúc 08:00 25/07/2025</li>
+            <li class="list-group-item"><i class="fas fa-edit text-info me-2"></i> Cập nhật thông tin cá nhân</li>
+            <li class="list-group-item"><i class="fas fa-file-alt text-warning me-2"></i> Tạo báo cáo mới</li>
+        </ul>
+    </div>
+</div>

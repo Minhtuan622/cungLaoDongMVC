@@ -1,8 +1,76 @@
-@model dynamic
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<div class="card shadow mb-4">
+  <div class="card-header d-flex align-items-center gap-3">
+    <img src="img/undraw_profile.svg" alt="Admin" class="rounded-circle" width="40" height="40">
+    <div>
+      <div class="fw-bold">Douglas McGee</div>
+      <div class="text-muted small">Quản trị viên</div>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="row g-2 mb-3">
+      <div class="col-md-5">
+        <select class="form-select" id="activityType">
+          <option value="">Tất cả hoạt động</option>
+          <option value="login">Đăng nhập</option>
+          <option value="edit">Chỉnh sửa thông tin</option>
+          <option value="report">Tạo báo cáo</option>
+        </select>
+      </div>
+      <div class="col-md-5">
+        <input type="date" class="form-control" id="activityDate">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary w-100" id="filterBtn">
+          <i class="fas fa-filter me-1"></i> Lọc
+        </button>
+      </div>
+    </div>
+
+    <ul class="list-group" id="activityList">
+      <li class="list-group-item d-flex align-items-center">
+        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+          <i class="fas fa-sign-in-alt"></i>
+        </div>
+        <div>
+          <div class="fw-semibold">Đăng nhập hệ thống</div>
+          <div class="text-muted small">08:00 25/07/2025</div>
+        </div>
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+          <i class="fas fa-edit"></i>
+        </div>
+        <div>
+          <div class="fw-semibold">Cập nhật thông tin cá nhân</div>
+          <div class="text-muted small">09:15 24/07/2025</div>
+        </div>
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <div>
+          <div class="fw-semibold">Tạo báo cáo mới</div>
+          <div class="text-muted small">10:30 23/07/2025</div>
+        </div>
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+          <i class="fas fa-trash"></i>
+        </div>
+        <div>
+          <div class="fw-semibold">Xóa tài liệu</div>
+          <div class="text-muted small">11:00 22/07/2025</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
