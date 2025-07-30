@@ -1,14 +1,14 @@
 @model List<BusinessIndustryModel>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Danh mục ngành kinh doanh";
     Layout = "_Layout";
 }
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <div class="d-sm-flex align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">Danh mục ngành kinh doanh</h6>
+            <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
             <a asp-controller="Categories" asp-action="Add" class="d-none d-sm-inline-block">
                 <i class="fas fa-download fa-sm text-white-50 pr-1"></i>
                 &plus; Thêm

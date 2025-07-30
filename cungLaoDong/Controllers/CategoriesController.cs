@@ -58,4 +58,10 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View(model:context.UnemployedStatusModels.ToList());
     }
+
+    // GET
+    public IActionResult UnemployedTime()
+    {
+        return View(model:context.UnemployedTimeModels.ToList());
+    }
 }
