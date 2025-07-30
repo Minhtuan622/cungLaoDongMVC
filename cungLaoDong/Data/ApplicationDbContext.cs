@@ -14,4 +14,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<MajorModel> MajorModels { get; set; } = null!;
     public DbSet<JobModel> JobModels { get; set; } = null!;
     public DbSet<BusinessIndustryModel> BusinessIndustryModels { get; set; } = null!;
+    public DbSet<ProfessionalQualificationsModel> ProfessionalQualificationsModels { get; set; } = null!;
 }
