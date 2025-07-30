@@ -20,7 +20,7 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     // GET
     public IActionResult BusinessIndustry()
     {
-        return View();
+        return View(model: context.BusinessIndustryModels.ToList());
     }
 
     // GET
