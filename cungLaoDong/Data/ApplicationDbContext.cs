@@ -18,4 +18,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<EconomyStatusModel> EconomyStatusModels { get; set; } = null!;
     public DbSet<UnemployedReasonModel> UnemployedReasonModels { get; set; } = null!;
     public DbSet<JobPositionModel> JobPositionModels { get; set; } = null!;
+    public DbSet<UnemployedStatusModel> UnemployedStatusModels { get; set; } = null!;
 }
