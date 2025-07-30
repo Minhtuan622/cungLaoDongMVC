@@ -3,4 +3,82 @@
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+@section Styles
+{
+    <link rel="stylesheet" href="css/profile/chat.css">
+}
+
+<div class="chat-container shadow rounded">
+    <!-- Danh sách người dùng -->
+    <div class="chat-users">
+        <div class="p-3 border-bottom">
+            <h6 class="fw-bold text-primary mb-0">
+                <i class="fas fa-users me-2"></i>Danh sách liên hệ
+            </h6>
+        </div>
+        <ul class="list-group list-group-flush" id="userList">
+            <li class="list-group-item active" data-user="1">
+                <img src="img/undraw_profile_1.svg" class="rounded-circle me-2" style="width:32px;height:32px;"
+                     alt="User">
+                <span>Nguyễn Văn A</span>
+                <span class="badge bg-success float-end mt-2">Online</span>
+            </li>
+            <li class="list-group-item" data-user="2">
+                <img src="img/undraw_profile_2.svg" class="rounded-circle me-2" style="width:32px;height:32px;"
+                     alt="User">
+                <span>Trần Thị B</span>
+                <span class="badge bg-secondary float-end mt-2">Offline</span>
+            </li>
+            <li class="list-group-item" data-user="3">
+                <img src="img/undraw_profile_3.svg" class="rounded-circle me-2" style="width:32px;height:32px;"
+                     alt="User">
+                <span>Phạm Văn C</span>
+                <span class="badge bg-success float-end mt-2">Online</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Khu vực chat chính -->
+    <div class="chat-main">
+        <div class="chat-header">
+            <img src="img/undraw_profile_1.svg" class="avatar" id="chatAvatar" alt="User">
+            <span class="name" id="chatName">Nguyễn Văn A</span>
+            <span class="status" id="chatStatus">Online</span>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Tin nhắn mẫu -->
+            <div class="chat-message other">
+                <img src="img/undraw_profile_1.svg" class="avatar" alt="User">
+                <div>
+                    <div class="bubble">Xin chào, bạn cần hỗ trợ gì?</div>
+                    <div class="meta">08:01 25/07/2025</div>
+                </div>
+            </div>
+            <div class="chat-message user">
+                <img src="img/undraw_profile.svg" class="avatar" alt="Admin">
+                <div>
+                    <div class="bubble">Tôi muốn hỏi về báo cáo tháng này.</div>
+                    <div class="meta text-end">08:02 25/07/2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <form id="chatForm" autocomplete="off">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0" id="chatInput"
+                           placeholder="Nhập tin nhắn...">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Gửi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="js/profile/chat.js"></script>
+}

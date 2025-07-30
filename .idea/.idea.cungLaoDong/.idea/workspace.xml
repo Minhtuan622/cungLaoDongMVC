@@ -9,30 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/ChatsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Pages/Chats/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/Profile/Update.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/ProfileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/ProfileController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/AddAdmin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/AddAdmin.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/Admin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/Admin.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/ResetPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Signup.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Signup.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/BusinessIndustry.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/BusinessIndustry.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Jobs.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Jobs.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Major.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Major.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Modules/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Modules/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Modules/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Modules/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Profile/ActivityLog.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Profile/ActivityLog.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Profile/ChangePassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Profile/ChangePassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Profile/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Profile/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Roles/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Roles/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Roles/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Roles/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Statistics/Reports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Statistics/Reports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +137,7 @@
       <workItem from="1753773941098" duration="8653000" />
       <workItem from="1753788172086" duration="472000" />
       <workItem from="1753798550157" duration="8526000" />
-      <workItem from="1753840849523" duration="3457000" />
+      <workItem from="1753840849523" duration="4082000" />
     </task>
     <servers />
   </component>
