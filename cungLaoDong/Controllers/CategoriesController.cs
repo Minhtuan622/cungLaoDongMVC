@@ -14,7 +14,7 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     // GET
     public IActionResult Jobs()
     {
-        return View();
+        return View(model: context.JobModels.ToList());
     }
 
     // GET

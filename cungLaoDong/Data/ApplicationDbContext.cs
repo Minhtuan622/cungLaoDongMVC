@@ -12,4 +12,5 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<EmployeeModel> EmployeeModels { get; set; } = null!;
     public DbSet<MajorModel> MajorModels { get; set; } = null!;
+    public DbSet<JobModel> JobModels { get; set; } = null!;
 }

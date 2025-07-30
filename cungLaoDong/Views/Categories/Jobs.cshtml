@@ -1,3 +1,4 @@
+@model List<JobModel>
 
 @{
     ViewBag.Title = "title";
@@ -19,23 +20,34 @@
             <table class="table table-bordered" id="dataTable">
                 <thead>
                 <tr class="text-primary">
+                    <th>#</th>
                     <th>Mã</th>
                     <th>Cấp</th>
                     <th>Tên</th>
                     <th>Ghi chú</th>
-                    <th>Hành động</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
+                    <th>#</th>
                     <th>Mã</th>
                     <th>Cấp</th>
                     <th>Tên</th>
                     <th>Ghi chú</th>
-                    <th>Hành động</th>
                 </tr>
                 </tfoot>
-                <tbody id="laborTable"></tbody>
+                <tbody id="laborTable">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Code</td>
+                        <td>@item.Level</td>
+                        <td>@item.Name</td>
+                        <td>@item.Note</td>
+                    </tr>
+                }
+                </tbody>
             </table>
         </div>
     </div>
