@@ -40,4 +40,10 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View(model: context.EconomyStatusModels.ToList());
     }
+
+    // GET
+    public IActionResult UnemployedReason()
+    {
+        return View(model:context.UnemployedReasonModels.ToList());
+    }
 }
