@@ -7,7 +7,7 @@ namespace cungLaoDong.Models;
 [Table(name: "cung_dm_chuyennganhdaotao")]
 public class MajorModel
 {
-    [Key] [Column("chuyennganhdaotao_id")] public Int32 Id { get; set; }
+    [Key] [Column("chuyennganhdaotao_id")] public int Id { get; set; }
 
     [DisplayName("Mã ngành")]
     [Column("chuyennganhdaotao_ma_nganh")]
@@ -15,7 +15,7 @@ public class MajorModel
 
     [DisplayName("Mã cấp")]
     [Column("chuyennganhdaotao_ma_cap")]
-    public Int32 Level { get; set; }
+    public int Level { get; set; }
 
     [DisplayName("Tên")]
     [Column("chuyennganhdaotao_ten")]

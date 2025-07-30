@@ -8,7 +8,7 @@ namespace cungLaoDong.Models;
 [Table(name: "cung_nguoilaodong")]
 public class EmployeeModel
 {
-    [Key] [Column("nld_id")] public Int32 Id { get; set; }
+    [Key] public int Id { get; set; }
 
     [Required(ErrorMessage = "Họ và tên không được trống")]
     [StringLength(255, ErrorMessage = "Họ và tên không được quá 255 ký tự")]
@@ -22,11 +22,11 @@ public class EmployeeModel
 
     [Required(ErrorMessage = "Ngày sinh không được trống")]
     [DisplayName("Ngày sinh")]
-    public JSType.Date? Birthday { get; set; }
+    public DateTime? Birthday { get; set; }
 
     [Required(ErrorMessage = "Giới tính không được trống")]
     [DisplayName("Giới tính")]
-    public Int32 Gender { get; set; }
+    public int Gender { get; set; }
 
     [Required(ErrorMessage = "Tỉnh thường trú không được trống")]
     [DisplayName("Tỉnh thường trú")]
@@ -46,8 +46,8 @@ public class EmployeeModel
 
     [DisplayName("Địa chỉ hiện tại")] public string? TemporaryResidenceAddress { get; set; }
 
-    [DisplayName("Tình trạng kinh tế")] public Int32 EconomyStatus { get; set; }
+    [DisplayName("Tình trạng kinh tế")] public int EconomyStatus { get; set; }
 
     [DisplayName("Lý do không tham gia hoạt động kinh tế")]
-    public Int32 UnemployedReason { get; set; }
+    public int UnemployedReason { get; set; }
 }
