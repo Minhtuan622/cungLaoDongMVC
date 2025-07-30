@@ -1,6 +1,7 @@
+@model List<MajorModel>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Danh mục chuyên ngành đào tạo";
     Layout = "_Layout";
 }
 
@@ -35,7 +36,20 @@
                     <th>Hành động</th>
                 </tr>
                 </tfoot>
-                <tbody id="laborTable"></tbody>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Code</td>
+                        <td>@item.Level</td>
+                        <td>@item.Name</td>
+                        <td class="w-25">@item.Note</td>
+                        <td>
+                            <a class="btn text-primary" asp-controller="Categories" asp-action="Add">Sửa</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
             </table>
         </div>
     </div>
