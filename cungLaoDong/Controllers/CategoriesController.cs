@@ -46,4 +46,10 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View(model:context.UnemployedReasonModels.ToList());
     }
+
+    // GET
+    public IActionResult JobPosition()
+    {
+        return View(model:context.JobPositionModels.ToList());
+    }
 }
