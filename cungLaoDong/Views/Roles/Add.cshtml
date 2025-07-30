@@ -5,4 +5,43 @@
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Thêm vai trò</h6>
+            <a asp-controller="Roles" asp-action="Index" class="d-none d-sm-inline-block">
+                <i class="fas fa-download fa-sm text-white-50 pr-1"></i>
+                Hủy
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group mb-3">
+            <label for="roleName" class="font-weight-bold">Tên vai trò</label>
+            <input type="text"
+                   id="roleName"
+                   class="form-control bg-light border-0 small"
+                   placeholder="Tên vai trò">
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+            <tr class="text-primary">
+                <th>Chức năng</th>
+                <th>Thêm</th>
+                <th>Xem</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="card-footer">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <button type="submit" class="btn btn-primary">
+                Lưu
+            </button>
+        </div>
+    </div>
+</div>

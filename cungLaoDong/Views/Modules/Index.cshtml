@@ -5,4 +5,27 @@
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Danh mục chức năng</h6>
+            <a asp-controller="Modules" asp-action="Add" class="d-none d-sm-inline-block">
+                <i class="fas fa-download fa-sm text-white-50 pr-1"></i>
+                &plus; Thêm
+            </a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable">
+                <thead>
+                <tr class="text-primary">
+                    <th>Chức năng</th>
+                    <th>Ngày tạo</th>
+                </tr>
+                </thead>
+                <tbody id="laborTable"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
