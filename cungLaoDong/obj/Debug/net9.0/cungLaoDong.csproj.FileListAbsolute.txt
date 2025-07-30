@@ -476,3 +476,7 @@ D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\h86kckttdc-g
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\noa3v34dme-fjtml3ocfn.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\fp19rq7kxw-t3uv1wyfxb.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\1b1mqgfrcs-2e2x19jzrv.gz
+D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\x4y20aoont-xvxpmzi9zc.gz
+D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\fv65zhsrdo-cgjpdo2wxo.gz
+D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\0k7y96cb3c-17kacz9lxx.gz
+D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\kev6qf5fcz-vqzzbxa3t0.gz

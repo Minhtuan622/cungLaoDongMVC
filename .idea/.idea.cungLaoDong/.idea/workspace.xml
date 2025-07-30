@@ -9,8 +9,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_AuthLayout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/ResetPassword.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Signup.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Auth/Signup.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rbcswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rbcswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjimswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjimswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +79,14 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/ModulesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/RolesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/StatisticsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/Pages/Chats/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/Admin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Modules/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Profile/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Roles/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Shared/_AuthLayout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Statistics/Reports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -137,7 +166,7 @@
       <workItem from="1753773941098" duration="8653000" />
       <workItem from="1753788172086" duration="472000" />
       <workItem from="1753798550157" duration="8526000" />
-      <workItem from="1753840849523" duration="4082000" />
+      <workItem from="1753840849523" duration="5477000" />
     </task>
     <servers />
   </component>
