@@ -1,8 +1,581 @@
 @model dynamic
 
 @{
-    ViewBag.Title = "title";
-    Layout = "_Layout";
+  ViewBag.Title = "title";
+  Layout = "_Layout";
 }
 
-<h2>title</h2>
+<h1 class="h3 mb-2 text-gray-800">
+  THỐNG KÊ BÁO CÁO THÔNG TIN NGƯỜI LAO ĐỘNG
+</h1>
+
+<div class="row mt-3">
+  <div class="col-md-4 mt-3">
+    <label>Tỉnh/Thành:</label>
+    <select id="tinh" class="select2">
+      <option value="">Chọn tỉnh/thành</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Phường / Xã:</label>
+    <select id="phuongxa" class="select2">
+      <option value="">Chọn phường/xã</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Giới tính:</label>
+    <select id="filterGioiTinh" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="nam">Nam</option>
+      <option value="Nữ">Nữ</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Độ tuổi:</label>
+    <select id="filterDoTuoi" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="15-24">15 - 24 tuổi</option>
+      <option value="25-34">25 - 34 tuổi</option>
+      <option value="35-44">35 - 44 tuổi</option>
+      <option value="45-54">45 - 54 tuổi</option>
+      <option value="55-60">55 - 60 tuổi</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Trình độ giáo dục phổ thông:</label>
+    <select id="filterTrinhDoGD" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Chưa học xong tiểu học">
+        Chưa học xong tiểu học
+      </option>
+      <option value="Tốt nghiệp tiểu học">
+        Tốt nghiệp tiểu học
+      </option>
+      <option value="Tốt nghiệp THCS">Tốt nghiệp THCS</option>
+      <option value="Tốt nghiệp THPT">Tốt nghiệp THPT</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Trình độ chuyên môn kỹ thuật:</label>
+    <select id="filterTrinhDo" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Chưa qua đào tạo">Chưa qua đào tạo</option>
+      <option value="CNKT không có bằng">CNKT không có bằng</option>
+      <option value="Chứng chỉ nghề dưới 3 tháng">
+        Chứng chỉ nghề dưới 3 tháng
+      </option>
+      <option value="Sơ cấp">Sơ cấp</option>
+      <option value="Trung cấp">Trung cấp</option>
+      <option value="Cao đẳng">Cao đẳng</option>
+      <option value="Đại học">Đại học</option>
+      <option value="Trên đại học">Trên đại học</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Tình trạng tham gia HDKT:</label>
+    <select id="filterTTTGHDKT" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Người có việc làm">Người có việc làm</option>
+      <option value="Người thất nghiệp">Người thất nghiệp</option>
+      <option value="Không tham gia">Không tham gia</option>
+    </select>
+  </div>
+
+  <div class="col-md-4 mt-3">
+    <label>Chuyên ngành đào tạo:</label>
+    <select
+      id="chuyen_nganh_dao_tao" class="select2"
+    >
+      <option value="">Tất cả</option>
+      <optgroup label="Công nghệ kỹ thuật">
+        <option value="5101">Công nghệ kỹ thuật cơ khí</option>
+        <option value="5102">
+          Công nghệ kỹ thuật điện, điện tử
+        </option>
+        <option value="5103">Công nghệ kỹ thuật xây dựng</option>
+        <option value="5104">Công nghệ thông tin</option>
+        <option value="5105">Công nghệ kỹ thuật hóa học</option>
+      </optgroup>
+      <optgroup label="Kỹ thuật">
+        <option value="5201">Kỹ thuật cơ khí</option>
+        <option value="5202">Kỹ thuật điện, điện tử</option>
+        <option value="5203">Kỹ thuật xây dựng</option>
+        <option value="5204">Công nghệ thông tin</option>
+      </optgroup>
+      <optgroup label="Kinh tế">
+        <option value="5401">Kinh tế</option>
+        <option value="5402">Quản trị kinh doanh</option>
+        <option value="5403">Kế toán</option>
+        <option value="5404">Tài chính - Ngân hàng</option>
+      </optgroup>
+      <optgroup label="Y tế">
+        <option value="5601">Y khoa</option>
+        <option value="5602">Dược học</option>
+      </optgroup>
+      <optgroup label="Luật & Giáo dục">
+        <option value="5801">Luật</option>
+        <option value="5901">Sư phạm Toán học</option>
+        <option value="5902">Sư phạm Ngữ văn</option>
+      </optgroup>
+      <option value="9999">Khác</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3">
+    <label>Đối tượng ưu tiên nếu có:</label>
+    <select id="filterDoiTuongUuTien" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Người khuyết tật">Người khuyết tật</option>
+      <option value="Thuộc hộ nghèo, cận nghèo">
+        Thuộc hộ nghèo, cận nghèo
+      </option>
+      <option value="Dân tộc thiểu số">Dân tộc thiểu số</option>
+    </select>
+
+    <!-- Hidden by default, hiện khi chọn "Dân tộc thiểu số" -->
+    <div id="danTocInputGroup" class="mt-2 d-none">
+      <label class="mt-2">Ghi tên dân tộc:</label>
+      <input
+        type="text"
+        id="filterDanTocKhac"
+        class="form-control"
+        placeholder="Ví dụ: Khmer, Chăm..."
+      />
+    </div>
+  </div>
+  <!-- Nhập tên dân tộc nếu là dân tộc thiểu số -->
+  <div class="col-md-4 mt-3 d-none" id="groupDanToc">
+    <label>Tên dân tộc:</label>
+    <input
+      type="text"
+      id="filterDanTocKhac"
+      class="form-control"
+      placeholder="Ví dụ: Khmer, Chăm..."
+    />
+  </div>
+  <!-- Nếu chọn "Không tham gia" -->
+  <div class="col-md-4 mt-3 d-none" id="groupLyDoKT">
+    <label>Lý do không tham gia:</label>
+    <select id="filterLyDoKT" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Đi học">Đi học</option>
+      <option value="Hưu trí">Hưu trí</option>
+      <option value="Nội trợ">Nội trợ</option>
+      <option value="Khuyết tật">Khuyết tật</option>
+      <option value="Khác">Khác</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3 d-none" id="groupNguoiDH">
+    <label for="filterNguoiDH" class="">Người đang đi học</label>
+    <select class="form-control" id="filterNguoiDH">
+      <option value="">Tất cả</option>
+      <option value="Chứng chỉ nghề dưới 3 tháng">
+        Chứng chỉ nghề dưới 3 tháng
+      </option>
+      <option value="Sơ cấp">Sơ cấp</option>
+      <option value="Trung cấp">Trung cấp</option>
+      <option value="Cao Đẳng">Cao Đẳng</option>
+      <option value="Đại học">Đại học</option>
+      <option value="Trên Đại Học">Trên Đại Học</option>
+    </select>
+  </div>
+
+  <div class="col-md-4 mt-3 d-none">
+    <label>Người có việc làm:</label>
+    <select id="filterViecLam" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Chủ cơ sở SXKD">Chủ cơ sở SXKD</option>
+      <option value="Tự làm">Tự làm</option>
+      <option value="Lao động gia đình">Lao động gia đình</option>
+      <option value="Làm công ăn lương">Làm công ăn lương</option>
+    </select>
+  </div>
+  <!-- Nếu không thất nghiệp -->
+  <div class="col-md-4 mt-3 d-none" id="groupViecLam">
+    <label>Vị thế việc làm:</label>
+    <select id="filterVithe" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Chủ cơ sở SXKD">Chủ cơ sở SXKD</option>
+      <option value="Tự làm">Tự làm</option>
+      <option value="Lao động gia đình">Lao động gia đình</option>
+      <option value="Làm công ăn lương">Làm công ăn lương</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3 d-none">
+    <label>Người thất nghiệp:</label>
+    <select class="form-control" id="filterThatNghiep">
+      <option value="">Tất cả</option>
+      <option value="Chưa bao giờ làm việc">
+        Chưa bao giờ làm việc
+      </option>
+      <option value="Đã từng làm việc">Đã từng làm việc</option>
+    </select>
+  </div>
+  <!-- Nếu chọn "Người thất nghiệp" -->
+  <div class="col-md-4 mt-3 d-none" id="groupThatNghiep">
+    <label>Trạng thái thất nghiệp:</label>
+    <select id="filterTTThatNghiep" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Chưa bao giờ làm việc">
+        Chưa bao giờ làm việc
+      </option>
+      <option value="Đã từng làm việc">Đã từng làm việc</option>
+    </select>
+  </div>
+  <div class="col-md-4 mt-3 d-none" id="groupThoiGianTN">
+    <label>Thời gian thất nghiệp:</label>
+    <select id="filterTNTime" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Dưới 3 tháng">Dưới 3 tháng</option>
+      <option value="Từ 3 tháng đến 1 năm">
+        Từ 3 tháng đến 1 năm
+      </option>
+      <option value="Trên 1 năm">Trên 1 năm</option>
+    </select>
+  </div>
+
+  <div class="col-md-4 mt-3 d-none">
+    <label>Thời gian thất nghiệp:</label>
+    <select id="filterHDKT" class="form-control">
+      <option value="">Tất cả</option>
+      <option value="Dưới 3 tháng">Dưới 3 tháng</option>
+      <option value="Từ 3 tháng đến 1 năm">
+        Từ 3 tháng đến 1 năm
+      </option>
+      <option value="Trên 1 năm">Trên 1 năm</option>
+    </select>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-6">
+    <button
+      class="mt-3 mb-3 d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+      onclick="exportToExcel('dataTable', 'ThongTinNguoiLaoDong')"
+    >
+      <i class="fas fa-download fa-sm text-white-50"></i> Xuất Excel
+    </button>
+    <button
+      class="mt-3 mb-3 d-sm-inline-block btn btn-sm btn-success shadow-sm"
+      onclick="applyFilters()"
+    >
+      <i class="fas fa-filter fa-sm text-white-50"></i> Lọc dữ liệu
+    </button>
+  </div>
+</div>
+
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">
+      Danh sách người lao động
+    </h6>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered"
+        id="dataTable"
+      >
+        <thead>
+        <tr class="text-primary">
+          <th>STT</th>
+          <th>Họ và Tên</th>
+          <th>Ngày/tháng/năm sinh</th>
+          <th>Phường / xã</th>
+          <th>Giới tính</th>
+          <th>Trình độ giáo dục phổ thông</th>
+          <th>Đối tượng ưu tiên ( nếu có )</th>
+          <th>Trình độ chuyên môn kỹ thuật</th>
+          <th>Chuyên ngành đào tạo</th>
+          <th>Tình trạng tham gia HDKT</th>
+          <th>Lý do không tham gia</th>
+          <th>Người có việc làm</th>
+          <th>Người thất nghiệp</th>
+          <th>Thời gian thất nghiệp</th>
+          <th>Người đang đi học</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nguyễn Văn A</td>
+          <td>14/10/2000</td>
+          <td>thị trấn An Phú</td>
+          <td>Nam</td>
+          <td>Tốt nghiệp THPT</td>
+
+          <td></td>
+
+          <td>Đại học</td>
+          <td>Công nghệ kỹ thuật cơ khí</td>
+          <td>Người có việc làm</td>
+          <td></td>
+          <td>Chủ cơ sở SXKD</td>
+          <td></td>
+          <td></td>
+          <td>Chứng chỉ nghề cấp dưới 3 tháng</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Trần Thị B</td>
+          <td>20/10/2003</td>
+          <td>thị trấn An Phú</td>
+          <td>Nữ</td>
+          <td>Tốt nghiệp THCS</td>
+          <td>Người khuyết tật</td>
+
+          <td>Trung cấp</td>
+          <td>Công nghệ thông tin</td>
+          <td>Không tham gia</td>
+          <td>Nội trợ</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Lê Minh C</td>
+          <td>1/12/1999</td>
+          <td>xã Khánh An</td>
+
+          <td>Nam</td>
+          <td>Tốt nghiệp THPT</td>
+          <td></td>
+          <td>Cao đẳng</td>
+          <td>Địa lý học</td>
+          <td>Người có việc làm</td>
+          <td></td>
+          <td>Tự làm</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Nguyễn Thị Thùy Linh</td>
+          <td>1/12/1980</td>
+          <td>xã Ba Đình</td>
+
+          <td>Nữ</td>
+          <td>Tốt nghiệp THPT</td>
+          <td>Thuộc hộ nghèo, cận nghèo</td>
+          <td>Cao đẳng</td>
+          <td>Công nghệ thông tin</td>
+          <td>Người thất nghiệp</td>
+          <td></td>
+          <td></td>
+          <td>Chưa bao giờ làm việc</td>
+          <td>Dưới 3 tháng</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Hồ Văn Mên</td>
+          <td>1/12/1992</td>
+          <td>xã Thục Phán</td>
+
+          <td>Nam</td>
+          <td>Tốt nghiệp THPT</td>
+          <td></td>
+          <td>Cao đẳng</td>
+          <td>Địa lý học</td>
+          <td>Người thất nghiệp</td>
+          <td></td>
+          <td></td>
+          <td>Đã từng làm việc</td>
+          <td>Từ 3 tháng đến 1 năm</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+@section Scripts
+{
+  <script>
+    function applyFilters() {
+      const doTuoi = $("#filterDoTuoi").val();
+      const phuongxa = $("#phuongxa").val().toLowerCase();
+      const tinhTrangTGHDKT = $("#filterTTTGHDKT").val().toLowerCase();
+      const vitheVL = $("#filterVithe").val().toLowerCase();
+      const ttTN = $("#filterTTThatNghiep").val().toLowerCase();
+      const tnTime = $("#filterTNTime").val().toLowerCase();
+      const lydo = $("#filterLyDoKT").val().toLowerCase();
+      const gioitinh = $("#filterGioiTinh").val().toLowerCase();
+      const trinhdo = $("#filterTrinhDo").val().toLowerCase();
+      const trinhdoGD = $("#filterTrinhDoGD").val().toLowerCase();
+      const chuyenNganh = $("#chuyen_nganh_dao_tao option:selected").text().toLowerCase();
+      console.log(gioitinh);
+
+      const doiTuongUuTien = $("#filterDoiTuongUuTien").val().toLowerCase();
+      // const nguoiDangHoc = $("#filterNguoiDH").val().toLowerCase();
+
+      const table = $("#dataTable").DataTable();
+
+      table.rows().every(function () {
+        const data = this.data();
+        const hoTen = data[1].toLowerCase();
+        const rowNgaySinh = data[2];
+
+        const rowPhuongXa = data[3].toLowerCase(); // Phường / xã
+        const rowGT = data[4].toLowerCase(); // Giới tính
+        const rowTrinhDoGD = data[5].toLowerCase(); // Trình độ giáo dục phổ thông
+        const rowUuTien = data[6].toLowerCase(); // Đối tượng ưu tiên
+        const rowTDCMKT = data[7].toLowerCase(); // Trình độ CMKT
+        const rowChuyenNganh = data[8].toLowerCase(); // Chuyên ngành đào tạo
+
+        const rowTTTGHDKT = data[9].toLowerCase(); // Tình trạng tham gia HDKT
+        const rowLyDoKT = data[10].toLowerCase(); // Lý do không tham gia
+        const rowVitheVL = data[11].toLowerCase(); // Vị thế việc làm
+
+        const rowTrangThaiTN = data[12].toLowerCase(); // Trạng thái thất nghiệp
+        const rowTGTN = data[13].toLowerCase(); // Thời gian thất nghiệp
+        const rowNguoiDH = data[14].toLowerCase(); // Người đang đi học
+
+        let isMatch = true;
+
+        if (doTuoi) {
+          const parts = rowNgaySinh.split("/");
+          if (parts.length === 3) {
+            const [d, m, y] = parts.map(Number);
+            const tuoi = new Date().getFullYear() - y;
+            const [minAge, maxAge] = doTuoi.split("-").map(Number);
+            if (tuoi < minAge || tuoi > maxAge) {
+              isMatch = false;
+            }
+          }
+        }
+        // 5. Lọc thêm các điều kiện chung khác (giới tính, trình độ, địa phương)
+        if (gioitinh && !rowGT.toLowerCase().includes(gioitinh.toLowerCase())) isMatch = false;
+        if (trinhdo && !rowTDCMKT.includes(trinhdo)) isMatch = false;
+        if (phuongxa && !rowPhuongXa.includes(phuongxa)) isMatch = false;
+        if (trinhdoGD && !rowTrinhDoGD.includes(trinhdoGD)) isMatch = false;
+        if (chuyenNganh && !rowChuyenNganh.includes(chuyenNganh)) isMatch = false;
+        //    if (tinhTrangTGHDKT && !rowTrangThaiTN.includes(tinhTrangTGHDKT)) {
+        //   isMatch = false;
+        // }
+        // if (nguoiDangHoc && !rowNguoiDangHoc.includes(nguoiDangHoc))
+        //   isMatch = false;
+        if (doiTuongUuTien && !rowUuTien.includes(doiTuongUuTien)) isMatch = false;
+        // Hiển thị hoặc ẩn dòng dữ liệu
+        $(this.node()).toggle(isMatch);
+
+      });
+    }
+
+    const baseUrl = "https://nqc.io.vn/api/lotus34/v2";
+
+    // Load tỉnh
+    $.getJSON(`${baseUrl}/provinces`, function (res) {
+      res.data.forEach(function (tinh) {
+        $("#tinh").append(
+          `<option value="${tinh.code}">${tinh.name}</option>`
+        );
+      });
+    });
+
+    // Khi chọn tỉnh → load xã/phường
+    $("#tinh").on("change", function () {
+      const provinceId = $(this).val();
+      $("#phuongxa")
+        .empty()
+        .append('<option value="">Chọn xã/phường</option>');
+
+      if (provinceId) {
+        $.getJSON(
+          `https://corsproxy.io/${baseUrl}/provinces/${provinceId}/communes`,
+          function (res) {
+            res.data.forEach(function (xa) {
+              $("#phuongxa").append(
+                `<option value="${xa.name}">${xa.name}</option>`
+              );
+            });
+          }
+        );
+      }
+    });
+    //select2
+    $(".select2").select2({
+      language: "vi",
+      width: "100%",
+      placeholder: "Chọn hoặc tìm kiếm...",
+      allowClear: true,
+    });
+    $("#filterDoiTuongUuTien").on("change", function () {
+      const val = $(this).val();
+      if (val === "Dân tộc thiểu số") {
+        $("#danTocInputGroup").removeClass("d-none");
+      } else {
+        $("#danTocInputGroup").addClass("d-none");
+        $("#filterDanTocKhac").val("");
+      }
+    });
+
+    $("#filterTTTGHDKT").on("change", function () {
+      const val = $(this).val();
+
+      // Luôn ẩn tất cả nhóm con trước
+      $(
+        "#groupViecLam,#groupNguoiDH, #groupThatNghiep, #groupThoiGianTN, #groupLyDoKT"
+      ).addClass("d-none");
+
+      // Xét điều kiện để hiện đúng nhóm
+      if (val === "Người có việc làm") {
+        $("#groupViecLam").removeClass("d-none");
+      } else if (val === "Người thất nghiệp") {
+        $("#groupThatNghiep, #groupThoiGianTN").removeClass("d-none");
+      } else if (val === "Không tham gia") {
+        $("#groupLyDoKT").removeClass("d-none");
+      }
+
+      // Không tự động lọc khi chọn trạng thái (nếu bạn dùng nút lọc riêng)
+      // applyFilters();
+    });
+    $("#filterLyDoKT").on("change", function () {
+      const val = $(this).val();
+      if (val === "Đi học") {
+        $("#groupLyDoKT").removeClass("d-none"); // chắc chắn form hiển thị
+        $("#groupNguoiDH").removeClass("d-none"); // hiện khi chọn Đi học
+      } else {
+        $("#groupLyDoKT + #groupNguoiDH").addClass("d-none");
+        $("#filterNguoiDH").val(""); // reset lựa chọn
+      }
+    });
+    $("#filterVithe, #filterttTN, #filterTNTime, #filterLyDoKT").on(
+      "change",
+      applyFilters
+    );
+
+    $(".select2").select2({
+      language: "vi",
+      width: "100%",
+      placeholder: "Chọn hoặc tìm kiếm...",
+      allowClear: true,
+    });
+
+    function exportToExcel(tableID, filename = "") {
+      const dataType =
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
+      const table = document.getElementById(tableID);
+      const wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
+      const about = XLSX.write(wb, {bookType: "xlsx", type: "binary"});
+
+      function s2ab(s) {
+        const buf = new ArrayBuffer(s.length);
+        const view = new Uint8Array(buf);
+        for (let i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xff;
+        return buf;
+      }
+
+      const blob = new Blob([s2ab(about)], {type: dataType});
+
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename ? filename + ".xlsx" : "excel_data.xlsx";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+}
