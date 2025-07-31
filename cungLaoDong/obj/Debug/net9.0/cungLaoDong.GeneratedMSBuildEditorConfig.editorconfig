@@ -60,28 +60,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xCdXNpbmVzc0luZHVzdHJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/EconomyStatus.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFY29ub215U3RhdHVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/JobPosition.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xKb2JQb3NpdGlvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/Jobs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xKb2JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/Major.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xNYWpvci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/ProfessionalQualifications.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xQcm9mZXNzaW9uYWxRdWFsaWZpY2F0aW9ucy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/UnemployedReason.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xVbmVtcGxveWVkUmVhc29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Chats/Index.cshtml]
@@ -134,6 +118,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Modules/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Profile/ActivityLog.cshtml]

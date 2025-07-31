@@ -28,10 +28,4 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View();
     }
-
-    // GET
-    public IActionResult ProfessionalQualifications()
-    {
-        return View(model: context.ProfessionalQualificationsModels.ToList());
-    }
 }
