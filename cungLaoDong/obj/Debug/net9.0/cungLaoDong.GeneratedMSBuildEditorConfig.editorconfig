@@ -88,10 +88,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xVbmVtcGxveWVkU3RhdHVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/UnemployedTime.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xVbmVtcGxveWVkVGltZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Chats/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -162,6 +158,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Statistics/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/_ViewImports.cshtml]

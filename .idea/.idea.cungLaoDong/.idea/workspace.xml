@@ -9,16 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/UnemployedTimeModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/UnemployedTime.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Add.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/CategoriesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/BusinessIndustry.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/BusinessIndustry.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/EconomyStatus.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/EconomyStatus.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Jobs.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Jobs.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Major.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Major.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/ProfessionalQualifications.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Categories/ProfessionalQualifications.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/UnemployedTime.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
@@ -68,6 +65,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c056f8c2b06c4230accb9afff1e52b6345908/f3/704ac56c/ValidationSummary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/87a653c9b3fdf4a52d3adc646664cd5842fd2fc728dcdab53698a4594abb2d1/ColumnAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/AccountManagementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/ModulesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/RolesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/StatisticsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/BusinessIndustryModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EconomyStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EmployeeModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,6 +95,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Roles/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Shared/_AuthLayout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Statistics/Reports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -177,6 +177,8 @@
       <workItem from="1753840849523" duration="8971000" />
       <workItem from="1753857721333" duration="10283000" />
       <workItem from="1753876397571" duration="9715000" />
+      <workItem from="1753930044382" duration="6609000" />
+      <workItem from="1753944506080" duration="3896000" />
     </task>
     <servers />
   </component>
