@@ -168,6 +168,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedStatus/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFN0YXR1c1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
