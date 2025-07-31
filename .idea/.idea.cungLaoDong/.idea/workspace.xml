@@ -9,13 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Add.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedStatusController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedStatus/Add.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedStatus/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/CategoriesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/UnemployedTime.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/UnemployedStatus.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/UnemployedStatus/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
@@ -75,6 +74,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/ModulesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/RolesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/StatisticsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedStatusController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/BusinessIndustryModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EconomyStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,6 +95,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Roles/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Shared/_AuthLayout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Statistics/Reports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/UnemployedStatus/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -178,7 +179,7 @@
       <workItem from="1753857721333" duration="10283000" />
       <workItem from="1753876397571" duration="9715000" />
       <workItem from="1753930044382" duration="6609000" />
-      <workItem from="1753944506080" duration="3896000" />
+      <workItem from="1753944506080" duration="5121000" />
     </task>
     <servers />
   </component>

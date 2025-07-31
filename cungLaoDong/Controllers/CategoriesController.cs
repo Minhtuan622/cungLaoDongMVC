@@ -52,10 +52,4 @@ public class CategoriesController(ApplicationDbContext context) : Controller
     {
         return View(model:context.JobPositionModels.ToList());
     }
-
-    // GET
-    public IActionResult UnemployedStatus()
-    {
-        return View(model:context.UnemployedStatusModels.ToList());
-    }
 }
