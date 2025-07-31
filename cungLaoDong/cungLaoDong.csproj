@@ -130,4 +130,8 @@
       <_ContentIncludedByDefault Remove="Pages\Roles\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
 </Project>

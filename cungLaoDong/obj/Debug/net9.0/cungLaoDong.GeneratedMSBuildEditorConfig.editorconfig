@@ -52,12 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xBZGQuY3NodG1s
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/BusinessIndustry.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xCdXNpbmVzc0luZHVzdHJ5LmNzaHRtbA==
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/coding_space/cungLaoDong/cungLaoDong/Views/Categories/Jobs.cshtml]
