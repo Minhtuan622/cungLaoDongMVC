@@ -1,7 +1,7 @@
-@model List<MajorModel>
+@model List<JobModel>
 
 @{
-    ViewBag.Title = "Danh mục chuyên ngành đào tạo";
+    ViewBag.Title = "Danh mục công việc";
     Layout = "_Layout";
 }
 
@@ -9,7 +9,7 @@
     <div class="card-header py-3">
         <div class="d-sm-flex align-items-center justify-content-between">
             <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
-            <a asp-controller="Categories" asp-action="Add" class="d-none d-sm-inline-block">
+            <a asp-controller="Jobs" asp-action="Add" class="d-none d-sm-inline-block">
                 <i class="fas fa-download fa-sm text-white-50 pr-1"></i>
                 &plus; Thêm
             </a>
@@ -57,7 +57,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item"
-                                            asp-controller="ProfessionalQualifications"
+                                            asp-controller="Jobs"
                                             asp-action="Edit"
                                             asp-route-id="@item.Id">
                                             Sửa
@@ -70,7 +70,7 @@
                                             data-bs-toggle="modal"
                                             data-bs-target="#deleteConfirmModal"
                                             data-id="@item.Id"
-                                            data-url="@Url.Action("Delete", "ProfessionalQualifications", new { id = item.Id })">
+                                            data-url="@Url.Action("Delete", "Jobs", new { id = item.Id })">
                                             Xóa
                                         </button>
                                     </li>

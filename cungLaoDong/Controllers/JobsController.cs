@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace cungLaoDong.Controllers;
 
-public class MajorController(ApplicationDbContext context) : Controller
+public class JobsController(ApplicationDbContext context) : Controller
 {
     // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.MajorModels.ToListAsync());
+        return View(model: await context.JobModels.ToListAsync());
     }
 
     // GET
@@ -22,7 +22,7 @@ public class MajorController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(MajorModel model)
+    public async Task<IActionResult> Add(JobModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -42,7 +42,7 @@ public class MajorController(ApplicationDbContext context) : Controller
             return NotFound();
         }
 
-        var data = await context.FindAsync<MajorModel>(keyValues: id);
+        var data = await context.FindAsync<JobModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -54,9 +54,9 @@ public class MajorController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, MajorModel model)
+    public async Task<IActionResult> Edit(int id, JobModel model)
     {
-        var data = await context.FindAsync<MajorModel>(keyValues: id);
+        var data = await context.FindAsync<JobModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -80,10 +80,10 @@ public class MajorController(ApplicationDbContext context) : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.MajorModels.FindAsync(keyValues: id);
+        var data = await context.JobModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.MajorModels.Remove(entity: data);
+            context.JobModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();
