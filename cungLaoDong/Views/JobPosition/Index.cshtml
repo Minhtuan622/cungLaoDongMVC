@@ -92,8 +92,16 @@
     </div>
 </div>
 
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.css" asp-append-version="true"/>
+}
+
 @section Scripts
 {
+    <script src="~/lib/datatables.net/dataTables.min.js"></script>
+    <script src="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/demo/datatables-demo.js" asp-append-version="true"></script>
     <script>
         const deleteModal = document.getElementById('deleteConfirmModal');
         deleteModal.addEventListener('show.bs.modal', function (event) {
@@ -104,5 +112,4 @@
             form.setAttribute('action', url);
         });
     </script>
-
 }
