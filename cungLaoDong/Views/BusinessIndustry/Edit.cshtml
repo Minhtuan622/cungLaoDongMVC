@@ -18,7 +18,16 @@
         </div>
         <div class="card-body">
             <div class="form-row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label asp-for="Code" class="font-weight-bold">Mã</label>
+                        <input asp-for="Code"
+                               class="form-control bg-light border-0 small"
+                               placeholder="Tên">
+                        <span asp-validation-for="Code" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
                     <div class="form-group">
                         <label asp-for="Name" class="font-weight-bold">Tên</label>
                         <input asp-for="Name"
@@ -27,7 +36,7 @@
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="form-group">
                         <label asp-for="Level" class="font-weight-bold">Cấp</label>
                         <input asp-for="Level"
@@ -36,7 +45,7 @@
                         <span asp-validation-for="Level" class="text-danger"></span>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="form-group">
                         <label asp-for="Note" class="font-weight-bold">Ghi chú</label>
                         <input asp-for="Note"
