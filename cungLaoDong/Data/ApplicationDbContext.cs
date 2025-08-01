@@ -20,4 +20,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<JobPositionModel> JobPositionModels { get; set; } = null!;
     public DbSet<UnemployedStatusModel> UnemployedStatusModels { get; set; } = null!;
     public DbSet<UnemployedTimeModel> UnemployedTimeModels { get; set; } = null!;
+    public DbSet<EducationLevelModel> EducationLevelModels { get; set; } = null!;
+    public DbSet<GeneralEducationLevelModel> GeneralEducationLevelModels { get; set; } = null!;
+    public DbSet<AddressModel> AddressModels { get; set; } = null!;
 }

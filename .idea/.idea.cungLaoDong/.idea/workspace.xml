@@ -9,33 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/Jobs/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/JobsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/MajorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/MajorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/BusinessIndustry/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/BusinessIndustry/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/BusinessIndustry/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/BusinessIndustry/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Jobs/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Jobs.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Jobs/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Categories/Major.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Major/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Major/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Major/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Major/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Show.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Update.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Add.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +174,7 @@
       <workItem from="1753930044382" duration="6609000" />
       <workItem from="1753944506080" duration="8596000" />
       <workItem from="1753961109110" duration="8778000" />
+      <workItem from="1754010557108" duration="2621000" />
     </task>
     <servers />
   </component>

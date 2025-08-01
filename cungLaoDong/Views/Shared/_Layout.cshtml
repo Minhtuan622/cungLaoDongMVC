@@ -47,7 +47,7 @@
             <div id="employeeManagement" class="collapse" data-bs-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" asp-controller="Employees" asp-action="Index">Tra cứu thông tin</a>
-                    <a class="collapse-item" asp-controller="Employees" asp-action="Update">Thêm mới</a>
+                    <a class="collapse-item" asp-controller="Employees" asp-action="Add">Thêm mới</a>
                 </div>
             </div>
         </li>
@@ -64,6 +64,8 @@
                     <a class="collapse-item" asp-controller="Major" asp-action="Index">Chuyên ngành đào tạo</a>
                     <a class="collapse-item" asp-controller="Jobs" asp-action="Index">Công việc</a>
                     <a class="collapse-item" asp-controller="BusinessIndustry" asp-action="Index">Ngành kinh doanh</a>
+                    <a class="collapse-item" asp-controller="EducationLevel" asp-action="Index">Trình độ đào tạo</a>
+                    <a class="collapse-item" asp-controller="GeneralEducationLevel" asp-action="Index">Trình độ phổ thông</a>
                     <a class="collapse-item" asp-controller="ProfessionalQualifications" asp-action="Index">Trình độ chuyên môn</a>
                     <a class="collapse-item" asp-controller="EconomyStatus" asp-action="Index">Tình trạng kinh tế</a>
                     <a class="collapse-item" asp-controller="UnemployedReason" asp-action="Index">Lý do không tham gia</a>
@@ -232,7 +234,7 @@
                             <!-- Message items -->
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image me-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                    <img class="rounded-circle" src="~/img/undraw_profile_1.svg" alt="...">
                                     <div class="status-indicator bg-success"></div>
                                 </div>
                                 <div class="fw-bold">
@@ -244,7 +246,7 @@
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image me-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                    <img class="rounded-circle" src="~/img/undraw_profile_2.svg" alt="...">
                                     <div class="status-indicator"></div>
                                 </div>
                                 <div>
@@ -254,7 +256,7 @@
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image me-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                    <img class="rounded-circle" src="~/img/undraw_profile_3.svg" alt="...">
                                     <div class="status-indicator bg-warning"></div>
                                 </div>
                                 <div>
@@ -287,7 +289,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="me-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                            <img class="img-profile rounded-circle" src="img/undraw_profile.svg" alt="">
+                            <img class="img-profile rounded-circle" src="~/img/undraw_profile.svg" alt="">
                         </a>
                         <div class="dropdown-menu dropdown-menu-end shadow animated--grow-in"
                              aria-labelledby="userDropdown">
