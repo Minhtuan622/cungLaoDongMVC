@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>aspnet-cungLaoDong-5aa30d9e-fcf9-4589-9389-cc980e577ea5</UserSecretsId>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -128,10 +129,6 @@
       <_ContentIncludedByDefault Remove="wwwroot\vendor\jquery\jquery.slim.min.map" />
       <_ContentIncludedByDefault Remove="Pages\Roles\Add.cshtml" />
       <_ContentIncludedByDefault Remove="Pages\Roles\Index.cshtml" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Pages\" />
     </ItemGroup>
 
 </Project>

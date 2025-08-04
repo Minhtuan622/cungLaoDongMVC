@@ -1,5 +1,5 @@
 const STATUS = {EMPLOYED: '1', UNEMPLOYED: '2', NOT_PARTICIPATING: '3'};
-const STUDY_REASON = 'Đi học';
+const STUDY_REASON = '1';
 
 function showSection(id, show) {
     $('#' + id).css('display', show ? 'block' : 'none');
@@ -30,53 +30,7 @@ function updateEthnicityField() {
     $('#ten_dan_toc').prop('required', checked);
 }
 
-function validateCCCD() {
-    const cccd = $('#cccd');
-    const value = cccd.val().trim();
-    const isValid = /^\d{12}$/.test(value);
-
-    cccd[0].setCustomValidity(isValid ? '' : 'Số CCCD không hợp lệ');
-    return isValid;
-}
-
-function validateAge() {
-    const ngaySinh = $('#ngay_sinh');
-    const value = ngaySinh.val();
-    if (!value) return false;
-
-    const birthDate = new Date(value);
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDiff = today.getMonth() - birthDate.getMonth();
-
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-
-    const isValid = age >= 15;
-    ngaySinh[0].setCustomValidity(isValid ? '' : 'Người lao động phải từ 15 tuổi trở lên');
-    return isValid;
-}
-
 $(function () {
-    const form = document.getElementById('laborForm');
-
-    $('#cccd').on('input', validateCCCD);
-    $('#ngay_sinh').on('input change', validateAge);
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        if (!form.checkValidity()) {
-            form.classList.add('was-validated');
-            return;
-        }
-
-        // TODO: Xử lý gửi form khi hợp lệ
-        console.log('Form hợp lệ, chuẩn bị gửi dữ liệu');
-    });
-
     updateSections();
     updateEthnicityField();
     $('#tinh_trang_viec_lam').on('change input', updateSections);

@@ -431,7 +431,6 @@ D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\tzbbiwdwwc-j
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\0w090qsd4a-mb5ojpgami.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\zdg7fy8u9q-8a5a2boi89.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\l1g8knysft-8m0irbrfsv.gz
-D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\24dxr67jrj-axt5ivuaw0.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\5oizpf32vw-tm60hubn44.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\t2842926gt-8f3ymkoar5.gz
 D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\zh8r1242ll-0modlfifju.gz
@@ -504,3 +503,4 @@ D:\coding_space\cungLaoDong\cungLaoDong\bin\Debug\net9.0\runtimes\win-arm64\nati
 D:\coding_space\cungLaoDong\cungLaoDong\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\coding_space\cungLaoDong\cungLaoDong\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\coding_space\cungLaoDong\cungLaoDong\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\coding_space\cungLaoDong\cungLaoDong\obj\Debug\net9.0\compressed\24dxr67jrj-2ax6daqqgt.gz

@@ -10,7 +10,7 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
 
-    public DbSet<EmployeeModel> EmployeeModels { get; set; } = null!;
+    public DbSet<EmployeeFormModel> EmployeeModels { get; set; } = null!;
     public DbSet<MajorModel> MajorModels { get; set; } = null!;
     public DbSet<JobModel> JobModels { get; set; } = null!;
     public DbSet<BusinessIndustryModel> BusinessIndustryModels { get; set; } = null!;
@@ -23,4 +23,10 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<EducationLevelModel> EducationLevelModels { get; set; } = null!;
     public DbSet<GeneralEducationLevelModel> GeneralEducationLevelModels { get; set; } = null!;
     public DbSet<AddressModel> AddressModels { get; set; } = null!;
+    public DbSet<PeopleModel> PeopleModels { get; set; } = null!;
+    public DbSet<PriorityFormModel> PriorityFormModels { get; set; } = null!;
+    public DbSet<GeneralEducationLevelsFormModel> GeneralEducationLevelsFormModels { get; set; } = null!;
+    public DbSet<HasJobFormModel> HasJobFormModels { get; set; } = null!;
+    public DbSet<UnemployedFormModel> UnemployedFormModels { get; set; } = null!;
+    public DbSet<StudyingFormModel> StudyingFormModels { get; set; } = null!;
 }
