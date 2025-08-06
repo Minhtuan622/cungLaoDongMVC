@@ -1,6 +1,4 @@
-using cungLaoDong.Models;
-
-namespace cungLaoDong.ViewModel;
+namespace cungLaoDong.Models.ViewModels;
 
 public class EmployeeViewModel
 {
@@ -22,4 +20,5 @@ public class EmployeeViewModel
     public HasJobFormModel? HasJobForm { get; set; }
     public UnemployedFormModel? UnemployedForm { get; set; }
     public StudyingFormModel? StudyingForm { get; set; }
+    public List<int>? SelectedPriorityKinds { get; set; }
 }

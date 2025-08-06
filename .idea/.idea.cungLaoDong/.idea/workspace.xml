@@ -9,36 +9,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/GeneralEducationLevelsFormModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/HasJobFormModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/PeopleModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/PriorityFormModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/StudyingFormModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/UnemployedFormModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/ViewModel/CreateEmployeeViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cungLaoDong/ViewModel/EmployeeViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/DTOs/EmployeeDTO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.metadata.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.projects.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.strings.v9.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/AddressModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/AddressModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/ViewModel/CreateEmployeeViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/ViewModels/CreateEmployeeViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/ViewModel/EmployeeViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/ViewModels/EmployeeViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.endpoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/cungLaoDong.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/cungLaoDong.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/24dxr67jrj-axt5ivuaw0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/compressed/l1g8knysft-8m0irbrfsv.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -57,7 +45,7 @@
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.build.json.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/wwwroot/js/employees/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +78,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b95edcc1c50e44ebbf7efbbca83c493ee8e928/33/7ae8931a/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c056f8c2b06c4230accb9afff1e52b6345908/f3/704ac56c/ValidationSummary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/87a653c9b3fdf4a52d3adc646664cd5842fd2fc728dcdab53698a4594abb2d1/ColumnAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,6 +102,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/AddressModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/BusinessIndustryModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/DTOs/EmployeeDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EconomyStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EducationLevelModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,8 +119,8 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedReasonModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedTimeModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/ViewModel/CreateEmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/ViewModel/EmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/ViewModels/CreateEmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/ViewModels/EmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/Admin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -179,7 +168,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "settings.editor.selected.configurable": "Aspire.Configurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -238,7 +227,9 @@
       <workItem from="1754056936513" duration="1066000" />
       <workItem from="1754098150615" duration="20825000" />
       <workItem from="1754223009219" duration="2606000" />
-      <workItem from="1754272078431" duration="15844000" />
+      <workItem from="1754272078431" duration="19636000" />
+      <workItem from="1754359164453" duration="20738000" />
+      <workItem from="1754444479183" duration="3443000" />
     </task>
     <servers />
   </component>

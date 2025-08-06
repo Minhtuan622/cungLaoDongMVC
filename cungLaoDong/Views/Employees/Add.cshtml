@@ -1,7 +1,7 @@
-@model cungLaoDong.ViewModel.EmployeeViewModel
+@model cungLaoDong.Models.ViewModels.EmployeeViewModel
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Thêm mới người lao động";
     Layout = "_Layout";
 }
 
@@ -164,8 +164,8 @@
                             <span asp-validation-for="EmployeeForm.TemporaryResidenceWard" class="text-danger"></span>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="tam_tru_diachichitiet" class="form-label fw-bold">Địa chỉ chi tiết</label>
-                            <input type="text" class="form-control" id="tam_tru_diachichitiet" maxlength="255">
+                            <label asp-for="EmployeeForm.TemporaryResidenceAddress" class="form-label fw-bold">Địa chỉ chi tiết</label>
+                            <input asp-for="EmployeeForm.TemporaryResidenceAddress" class="form-control" maxlength="255">
                         </div>
                     </div>
                 </div>

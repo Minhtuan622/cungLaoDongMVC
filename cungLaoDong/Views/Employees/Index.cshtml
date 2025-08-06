@@ -1,6 +1,7 @@
+@model IEnumerable<cungLaoDong.Models.EmployeeFormModel>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Quản lý người lao động";
     Layout = "_Layout";
 }
 
@@ -53,14 +54,6 @@
                         <th>Trình độ chuyên môn</th>
                         <th>Chuyên ngành đào tạo</th>
                         <th>Tình trạng</th>
-                        <th>Vị thế việc làm</th>
-                        <th>Công việc</th>
-                        <th>Nơi làm việc</th>
-                        <th>Thời gian thất nghiệp</th>
-                        <th>Nhu cầu việc làm</th>
-                        <th>Trình độ đào tạo hiện tại</th>
-                        <th>Chuyên ngành hiện tại</th>
-                        <th>Thời gian tốt nghiệp</th>
                         <th>Hành động</th>
                     </tr>
                 </thead>
@@ -77,19 +70,56 @@
                         <th>Trình độ chuyên môn</th>
                         <th>Chuyên ngành đào tạo</th>
                         <th>Tình trạng</th>
-                        <th>Vị thế việc làm</th>
-                        <th>Công việc</th>
-                        <th>Nơi làm việc</th>
-                        <th>Thời gian thất nghiệp</th>
-                        <th>Nhu cầu việc làm</th>
-                        <th>Trình độ đào tạo hiện tại</th>
-                        <th>Chuyên ngành hiện tại</th>
-                        <th>Thời gian tốt nghiệp</th>
                         <th>Hành động</th>
                     </tr>
                 </tfoot>
                 <tbody id="laborTable">
-                    <!-- Dữ liệu sẽ được đổ ở đây bằng JS -->
+                    @if (Model.Any())
+                    {
+                        @foreach (var employee in Model)
+                        {
+                            <tr>
+                                <td>@(employee.FullName ?? "N/A")</td>
+                                <td>@(employee.Identity ?? "N/A")</td>
+                                <td>@(employee.Birthday?.ToString("dd/MM/yyyy") ?? "N/A")</td>
+                                <td>@(employee.Gender ? "Nam" : "Nữ")</td>
+                                <td>@GetFullAddress(employee.PermanentProvince, employee.PermanentWard, employee.PermanentAddress)</td>
+                                <td>@GetFullAddress(employee.TemporaryResidenceProvince, employee.TemporaryResidenceWard, employee.TemporaryResidenceAddress)</td>
+                                <td>Không</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>Không</td>
+                                <td>@GetEconomyStatusText(employee.EconomyStatus)</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownActionBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
+                                        <ul class="dropdown-menu animated--fade-in" aria-labelledby="dropdownActionBtn">
+                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Show" asp-route-id="@employee.Id">Xem</a></li>
+                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">Sửa</a></li>
+                                            <button
+                                                type="button"
+                                                class="dropdown-item text-danger"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#deleteConfirmModal"
+                                                data-id="@employee.Id"
+                                                data-url="@Url.Action("Delete", "Employees", new { id = employee.Id })">
+                                                Xóa
+                                            </button>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="20" class="text-center">Không có dữ liệu</td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
@@ -309,7 +339,71 @@
     </div>
 </div>
 
+<!-- Modal xác nhận xóa -->
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="deleteConfirmModalLabel">Xác nhận xóa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa mục này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form id="confirmDeleteForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.css" asp-append-version="true"/>
+}
+
 @section Scripts
 {
-    <script src="js/employees/index.js"></script>
+    <script src="~/lib/datatables.net/dataTables.min.js"></script>
+    <script src="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/demo/datatables-demo.js" asp-append-version="true"></script>
+    @* <script src="js/employees/index.js"></script> *@
+    <script>
+        const deleteModal = document.getElementById('deleteConfirmModal');
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const url = button.getAttribute('data-url');
+
+            const form = deleteModal.querySelector('#confirmDeleteForm');
+            form.setAttribute('action', url);
+        });
+    </script>
+}
+
+@functions {
+    private static string GetFullAddress(string? province, string? ward, string? address)
+    {
+        var parts = new List<string>();
+        if (!string.IsNullOrEmpty(province)) parts.Add(province);
+        if (!string.IsNullOrEmpty(ward)) parts.Add(ward);
+        if (!string.IsNullOrEmpty(address)) parts.Add(address);
+        
+        return parts.Count > 0 ? string.Join(", ", parts) : "Không";
+    }
+
+    private static string GetEconomyStatusText(int economyStatus)
+    {
+        return economyStatus switch
+        {
+            1 => "Có việc làm",
+            2 => "Thất nghiệp",
+            3 => "Không tham gia",
+            _ => "Không xác định"
+        };
+    }
 }

@@ -30,7 +30,7 @@ public class EmployeeFormModel
     [Required(ErrorMessage = "Giới tính không được trống")]
     [DisplayName("Giới tính")]
     [Column("nld_gioi_tinh")]
-    public int Gender { get; set; }
+    public bool Gender { get; set; }
 
     [Required(ErrorMessage = "Tỉnh thường trú không được trống")]
     [DisplayName("Tỉnh thường trú")]
