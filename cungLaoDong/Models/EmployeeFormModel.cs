@@ -34,12 +34,12 @@ public class EmployeeFormModel
 
     [Required(ErrorMessage = "Tỉnh thường trú không được trống")]
     [DisplayName("Tỉnh thường trú")]
-    [Column("nld_thuong_tru_tinh")]
+    [Column("nld_thuong_tru_tinh_id")]
     public string? PermanentProvince { get; set; }
 
     [Required(ErrorMessage = "Phường / xã thường trú không được trống")]
     [DisplayName("Phường / xã thường trú")]
-    [Column("nld_thuong_tru_phuongxa")]
+    [Column("nld_thuong_tru_phuongxa_id")]
     public string? PermanentWard { get; set; }
 
     [Required(ErrorMessage = "Địa chỉ thường trú không được trống")]
@@ -48,11 +48,11 @@ public class EmployeeFormModel
     public string? PermanentAddress { get; set; }
 
     [DisplayName("Tỉnh hiện tại")] 
-    [Column("nld_tam_tru_tinh")]
+    [Column("nld_tam_tru_tinh_id")]
     public string? TemporaryResidenceProvince { get; set; }
 
     [DisplayName("Phường / xã hiện tại")] 
-    [Column("nld_tam_tru_phuongxa")]
+    [Column("nld_tam_tru_phuongxa_id")]
     public string? TemporaryResidenceWard { get; set; }
 
     [DisplayName("Địa chỉ hiện tại")] 
