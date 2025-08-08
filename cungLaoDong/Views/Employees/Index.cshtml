@@ -1,4 +1,4 @@
-@model List<Task<cungLaoDong.Models.ViewModels.Employee.EmployeeInfoViewModel>>
+@model IEnumerable<cungLaoDong.Models.ViewModels.Employee.EmployeeInfoViewModel>
 
 @{
     ViewBag.Title = "Quản lý người lao động";
@@ -73,14 +73,14 @@
                         @foreach (var employee in Model)
                         {
                             <tr>
-                                <td>@(employee.Result.FullName ?? "N/A")</td>
-                                <td>@(employee.Result.Identity ?? "N/A")</td>
-                                <td>@(employee.Result.Birthday?.ToString("dd/MM/yyyy") ?? "N/A")</td>
-                                <td>@(employee.Result.Gender ?? "N/A")</td>
-                                <td>@(employee.Result.PermanentAddress ?? "")</td>
-                                <td>@(employee.Result.TemporaryResidenceAddress ?? "")</td>
-                                <td>@(employee.Result.EconomyStatus?.Name ?? "N/A")</td>
-                                <td>@(employee.Result.UnemployedReason?.Name ?? "N/A")</td>
+                                <td>@(employee.FullName ?? "N/A")</td>
+                                <td>@(employee.Identity ?? "N/A")</td>
+                                <td>@(employee.Birthday?.ToString("dd/MM/yyyy") ?? "N/A")</td>
+                                <td>@(employee.Gender ?? "N/A")</td>
+                                <td>@(employee.PermanentAddress ?? "")</td>
+                                <td>@(employee.TemporaryResidenceAddress ?? "")</td>
+                                <td>@(employee.EconomyStatus?.Name ?? "N/A")</td>
+                                <td>@(employee.UnemployedReason?.Name ?? "N/A")</td>
                                 <td>
                                     <div class="dropdown">
                                         <button class="btn btn-primary dropdown-toggle" type="button"
@@ -88,15 +88,15 @@
                                             <i class="fas fa-bars"></i>
                                         </button>
                                         <ul class="dropdown-menu animated--fade-in" aria-labelledby="dropdownActionBtn">
-                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Show" asp-route-id="@employee.Result.Id">Xem</a></li>
-                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Result.Id">Sửa</a></li>
+                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Show" asp-route-id="@employee.Id">Xem</a></li>
+                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">Sửa</a></li>
                                             <button
                                                 type="button"
                                                 class="dropdown-item text-danger"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#deleteConfirmModal"
-                                                data-id="@employee.Result.Id"
-                                                data-url="@Url.Action("Delete", "Employees", new { id = employee.Result.Id })">
+                                                data-id="@employee.Id"
+                                                data-url="@Url.Action("Delete", "Employees", new { id = employee.Id })">
                                                 Xóa
                                             </button>
                                         </ul>
