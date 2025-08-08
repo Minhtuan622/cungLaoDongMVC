@@ -1,10 +1,11 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Qualifications.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Qualifications.Controllers;
 
+[Area("Qualifications")]
 public class ProfessionalQualificationsController(ApplicationDbContext context) : Controller
 {
     public async Task<IActionResult> Index()

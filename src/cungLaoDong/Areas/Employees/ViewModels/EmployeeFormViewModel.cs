@@ -3,6 +3,7 @@ using cungLaoDong.Areas.Education.Models;
 using cungLaoDong.Models;
 using cungLaoDong.Areas.Unemployed.Models;
 using cungLaoDong.Areas.Jobs.Models;
+using cungLaoDong.Areas.Qualifications.Models;
 
 namespace cungLaoDong.Areas.Employees.ViewModels;
 

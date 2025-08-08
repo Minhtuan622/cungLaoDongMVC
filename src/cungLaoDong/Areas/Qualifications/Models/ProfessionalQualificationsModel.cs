@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cungLaoDong.Models;
+namespace cungLaoDong.Areas.Qualifications.Models;
 
 [Table(name: "cung_dm_trinhdochuyenmon")]
 public class ProfessionalQualificationsModel

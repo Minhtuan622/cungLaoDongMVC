@@ -1,4 +1,5 @@
 using cungLaoDong.Areas.Education.Models;
+using cungLaoDong.Areas.Qualifications.Models;
 using cungLaoDong.Models;
 
 namespace cungLaoDong.Areas.Employees.ViewModels;
