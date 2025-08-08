@@ -1,7 +1,7 @@
-using cungLaoDong.Models;
-using cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Areas.Employees.ViewModels;
 
-namespace cungLaoDong.Data.Repositories;
+namespace cungLaoDong.Areas.Employees.Repositories;
 
 public interface IEmployeeRepository
 {

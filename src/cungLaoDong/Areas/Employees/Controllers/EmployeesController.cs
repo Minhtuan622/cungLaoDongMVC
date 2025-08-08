@@ -1,13 +1,14 @@
 using cungLaoDong.Data;
-using cungLaoDong.Data.Repositories;
-using cungLaoDong.Models;
-using cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Areas.Employees.Repositories;
+using cungLaoDong.Areas.Employees.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Employees.Controllers;
 
+ [Area("Employees")]
 public class EmployeesController(
     ApplicationDbContext context,
     IEmployeeRepository employeeRepository,

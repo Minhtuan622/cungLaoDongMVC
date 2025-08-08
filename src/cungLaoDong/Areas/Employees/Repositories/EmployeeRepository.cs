@@ -1,8 +1,8 @@
-using cungLaoDong.Models;
-using cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Areas.Employees.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Data.Repositories;
+namespace cungLaoDong.Areas.Employees.Repositories;
 
 public class EmployeeRepository(ApplicationDbContext context) : IEmployeeRepository
 {

@@ -1,4 +1,7 @@
-namespace cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Models;
+
+namespace cungLaoDong.Areas.Employees.ViewModels;
 
 public class EmployeeFormViewModel
 {

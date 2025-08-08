@@ -1,4 +1,6 @@
-namespace cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Models;
+
+namespace cungLaoDong.Areas.Employees.ViewModels;
 
 public class UnemployedViewModel
 {
