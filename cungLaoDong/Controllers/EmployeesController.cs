@@ -20,10 +20,12 @@ public class EmployeesController(
         {
             var employees = await employeeRepository.GetAllEmployeesAsync();
 
-            var dataTasks = employees
-                .Select(employee => employeeRepository.GetEmployeeInfoByIdAsync(employee.Id));
-
-            var data = await Task.WhenAll(dataTasks);
+            var data = new List<EmployeeInfoViewModel>();
+            foreach (var employee in employees)
+            {
+                var info = await employeeRepository.GetEmployeeInfoByIdAsync(employee.Id);
+                data.Add(info);
+            }
 
             return View(data);
         }
@@ -42,10 +44,6 @@ public class EmployeesController(
         }
 
         var employeeInfo = await employeeRepository.GetEmployeeInfoByIdAsync(id.Value);
-        if (employeeInfo == null)
-        {
-            return NotFound();
-        }
 
         var employeeData = await employeeRepository.GetEmployeeByIdAsync(employeeInfo.Id);
         if (employeeData == null)
@@ -54,39 +52,39 @@ public class EmployeesController(
         }
 
         var permanentAddress =
-            context.AddressModels.Find(employeeData.PermanentProvince)?.Name +
-            context.AddressModels.Find(employeeData.PermanentWard)?.Name +
-            context.AddressModels.Find(employeeData.PermanentAddress)?.Name;
+            (await context.AddressModels.FindAsync(employeeData.PermanentProvince))?.Name +
+            (await context.AddressModels.FindAsync(employeeData.PermanentWard))?.Name +
+            (await context.AddressModels.FindAsync(employeeData.PermanentAddress))?.Name;
         var temporaryResidenceAddress =
-            context.AddressModels.Find(employeeData.TemporaryResidenceProvince)?.Name +
-            context.AddressModels.Find(employeeData.TemporaryResidenceWard)?.Name +
-            context.AddressModels.Find(employeeData.TemporaryResidenceAddress)?.Name;
+            (await context.AddressModels.FindAsync(employeeData.TemporaryResidenceProvince))?.Name +
+            (await context.AddressModels.FindAsync(employeeData.TemporaryResidenceWard))?.Name +
+            (await context.AddressModels.FindAsync(employeeData.TemporaryResidenceAddress))?.Name;
 
-        var hasJob = context.HasJobFormModels.Find(employeeData.Id);
+        var hasJob = await context.HasJobFormModels.FindAsync(employeeData.Id);
         var hasJobViewModel = new HasJobViewModel();
         if (hasJob is not null)
         {
             hasJobViewModel.Id = hasJob.Id;
-            hasJobViewModel.Job = context.JobModels.Find(hasJob.JobId);
-            hasJobViewModel.JobPosition = context.JobPositionModels.Find(hasJob.JobPositionId);
+            hasJobViewModel.Job = await context.JobModels.FindAsync(hasJob.JobId);
+            hasJobViewModel.JobPosition = await context.JobPositionModels.FindAsync(hasJob.JobPositionId);
             hasJobViewModel.Employee = employeeInfo;
-            hasJobViewModel.Province = context.AddressModels.Find(hasJob.AddressProvince.ToString())?.Name;
-            hasJobViewModel.Weird = context.AddressModels.Find(hasJob.AddressWeird.ToString())?.Name;
-            hasJobViewModel.Address = context.AddressModels.Find(hasJob.AddressInfo)?.Name;
+            hasJobViewModel.Province = (await context.AddressModels.FindAsync(hasJob.AddressProvince.ToString()))?.Name;
+            hasJobViewModel.Weird = (await context.AddressModels.FindAsync(hasJob.AddressWeird.ToString()))?.Name;
+            hasJobViewModel.Address = (await context.AddressModels.FindAsync(hasJob.AddressInfo))?.Name;
         }
 
-        var unemployed = context.UnemployedFormModels.Find(employeeData.Id);
+        var unemployed = await context.UnemployedFormModels.FindAsync(employeeData.Id);
         var unemployedViewModel = new UnemployedViewModel();
         if (unemployed is not null)
         {
             unemployedViewModel.Id = unemployed.Id;
             unemployedViewModel.Employee = employeeInfo;
-            unemployedViewModel.Time = context.UnemployedTimeModels.Find(unemployed.TimeId);
+            unemployedViewModel.Time = await context.UnemployedTimeModels.FindAsync(unemployed.TimeId);
             unemployedViewModel.Status = unemployed.Status ? "Đã từng làm việc" : "Chưa từng làm việc";
             unemployedViewModel.Demand = unemployed.Demand;
         }
 
-        var priority = context.PriorityFormModels.Find(employeeData.Id);
+        var priority = await context.PriorityFormModels.FindAsync(employeeData.Id);
         var priorityViewModel = new PriorityViewModel();
         if (priority is not null)
         {
@@ -97,46 +95,46 @@ public class EmployeesController(
                 priorityViewModel.Kind = JsonConvert.DeserializeObject<List<int>>(priority.Kind);
             }
 
-            priorityViewModel.People = context.PeopleModels.Find(priority.PeopleId);
+            priorityViewModel.People = await context.PeopleModels.FindAsync(priority.PeopleId);
         }
 
-        var education = context.GeneralEducationLevelsFormModels.Find(employeeData.Id);
+        var education = await context.GeneralEducationLevelsFormModels.FindAsync(employeeData.Id);
         var generalEducationLevels = new GeneralEducationLevelsViewModel();
         if (education is not null)
         {
             generalEducationLevels.Id = education.Id;
             generalEducationLevels.Employee = employeeInfo;
-            generalEducationLevels.EducationLevel = context.EducationLevelModels.Find(education.EducationLevelId);
+            generalEducationLevels.EducationLevel = await context.EducationLevelModels.FindAsync(education.EducationLevelId);
             generalEducationLevels.ProfessionalQualification =
-                context.ProfessionalQualificationsModels.Find(education.ProfessionalQualificationId);
-            generalEducationLevels.Major = context.MajorModels.Find(education.MajorId);
+                await context.ProfessionalQualificationsModels.FindAsync(education.ProfessionalQualificationId);
+            generalEducationLevels.Major = await context.MajorModels.FindAsync(education.MajorId);
         }
 
-        var studying = context.StudyingFormModels.Find(employeeData.Id);
+        var studying = await context.StudyingFormModels.FindAsync(employeeData.Id);
         var studyingViewModel = new StudyingViewModel();
         if (studying is not null)
         {
             studyingViewModel.Id = studying.Id;
             studyingViewModel.Employee = employeeInfo;
-            studyingViewModel.EducationLevel = context.EducationLevelModels.Find(studying.EducationLevel);
+            studyingViewModel.EducationLevel = await context.EducationLevelModels.FindAsync(studying.EducationLevel);
             studyingViewModel.GraduateTime = studying.GraduateTime;
-            studyingViewModel.Major = context.MajorModels.Find(studying.MajorId);
+            studyingViewModel.Major = await context.MajorModels.FindAsync(studying.MajorId);
         }
 
         var data = new ShowEmployeeViewModel
         {
             EmployeeInfo = employeeInfo,
-            BusinessIndustry = context.BusinessIndustryModels.Find(employeeData.Id),
-            EconomyStatus = context.EconomyStatusModels.Find(employeeData.Id),
-            EducationLevel = context.EducationLevelModels.Find(employeeData.Id),
-            GeneralEducationLevel = context.GeneralEducationLevelModels.Find(employeeData.Id),
-            Job = context.JobModels.Find(employeeData.Id),
-            JobPosition = context.JobPositionModels.Find(employeeData.Id),
-            Major = context.MajorModels.Find(employeeData.Id),
-            People = context.PeopleModels.Find(employeeData.Id),
-            ProfessionalQualification = context.ProfessionalQualificationsModels.Find(employeeData.Id),
-            UnemployedReason = context.UnemployedReasonModels.Find(employeeData.UnemployedReason),
-            UnemployedTime = context.UnemployedTimeModels.Find(employeeData.Id),
+            BusinessIndustry = await context.BusinessIndustryModels.FindAsync(employeeData.Id),
+            EconomyStatus = await context.EconomyStatusModels.FindAsync(employeeData.Id),
+            EducationLevel = await context.EducationLevelModels.FindAsync(employeeData.Id),
+            GeneralEducationLevel = await context.GeneralEducationLevelModels.FindAsync(employeeData.Id),
+            Job = await context.JobModels.FindAsync(employeeData.Id),
+            JobPosition = await context.JobPositionModels.FindAsync(employeeData.Id),
+            Major = await context.MajorModels.FindAsync(employeeData.Id),
+            People = await context.PeopleModels.FindAsync(employeeData.Id),
+            ProfessionalQualification = await context.ProfessionalQualificationsModels.FindAsync(employeeData.Id),
+            UnemployedReason = await context.UnemployedReasonModels.FindAsync(employeeData.UnemployedReason),
+            UnemployedTime = await context.UnemployedTimeModels.FindAsync(employeeData.Id),
             PermanentAddress = permanentAddress,
             TemporaryResidenceAddress = temporaryResidenceAddress,
             HasJob = hasJobViewModel,
