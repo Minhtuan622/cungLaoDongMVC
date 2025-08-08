@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using cungLaoDong.Data;
-using cungLaoDong.Data.Repositories;
+using cungLaoDong.Areas.Employees.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +38,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
