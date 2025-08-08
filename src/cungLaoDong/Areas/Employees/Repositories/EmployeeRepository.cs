@@ -1,5 +1,6 @@
 using cungLaoDong.Areas.Employees.Models;
 using cungLaoDong.Areas.Employees.ViewModels;
+using cungLaoDong.Areas.Unemployed.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace cungLaoDong.Areas.Employees.Repositories;

@@ -1,5 +1,6 @@
-﻿using cungLaoDong.Models;
+using cungLaoDong.Models;
 using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Areas.Unemployed.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,16 +1,17 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Unemployed.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Unemployed.Controllers;
 
-public class UnemployedTimeController(ApplicationDbContext context) : Controller
+[Area("Unemployed")]
+public class UnemployedStatusController(ApplicationDbContext context) : Controller
 {
     // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.UnemployedTimeModels.ToListAsync());
+        return View(model: await context.UnemployedStatusModels.ToListAsync());
     }
 
     // GET
@@ -18,11 +19,10 @@ public class UnemployedTimeController(ApplicationDbContext context) : Controller
     {
         return View();
     }
-
-    // POST
+    
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(UnemployedTimeModel model)
+    public async Task<IActionResult> Add(UnemployedStatusModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -42,7 +42,7 @@ public class UnemployedTimeController(ApplicationDbContext context) : Controller
             return NotFound();
         }
 
-        var data = await context.FindAsync<UnemployedTimeModel>(keyValues: id);
+        var data = await context.FindAsync<UnemployedStatusModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -50,13 +50,12 @@ public class UnemployedTimeController(ApplicationDbContext context) : Controller
 
         return View(model: data);
     }
-
-    // POST
+    
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, UnemployedTimeModel model)
+    public async Task<IActionResult> Edit(int id, UnemployedStatusModel model)
     {
-        var data = await context.FindAsync<UnemployedTimeModel>(keyValues: id);
+        var data = await context.FindAsync<UnemployedStatusModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -77,10 +76,10 @@ public class UnemployedTimeController(ApplicationDbContext context) : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.UnemployedTimeModels.FindAsync(keyValues: id);
+        var data = await context.UnemployedStatusModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.UnemployedTimeModels.Remove(entity: data);
+            context.UnemployedStatusModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();

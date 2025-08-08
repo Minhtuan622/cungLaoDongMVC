@@ -1,15 +1,17 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Unemployed.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Unemployed.Controllers;
 
-public class UnemployedReasonController(ApplicationDbContext context) : Controller
+[Area("Unemployed")]
+public class UnemployedTimeController(ApplicationDbContext context) : Controller
 {
+    // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.UnemployedReasonModels.ToListAsync());
+        return View(model: await context.UnemployedTimeModels.ToListAsync());
     }
 
     // GET
@@ -21,7 +23,7 @@ public class UnemployedReasonController(ApplicationDbContext context) : Controll
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(UnemployedReasonModel model)
+    public async Task<IActionResult> Add(UnemployedTimeModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -41,7 +43,7 @@ public class UnemployedReasonController(ApplicationDbContext context) : Controll
             return NotFound();
         }
 
-        var data = await context.FindAsync<UnemployedReasonModel>(keyValues: id);
+        var data = await context.FindAsync<UnemployedTimeModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -53,9 +55,9 @@ public class UnemployedReasonController(ApplicationDbContext context) : Controll
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, UnemployedReasonModel model)
+    public async Task<IActionResult> Edit(int id, UnemployedTimeModel model)
     {
-        var data = await context.FindAsync<UnemployedReasonModel>(keyValues: id);
+        var data = await context.FindAsync<UnemployedTimeModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -76,10 +78,10 @@ public class UnemployedReasonController(ApplicationDbContext context) : Controll
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.UnemployedReasonModels.FindAsync(keyValues: id);
+        var data = await context.UnemployedTimeModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.UnemployedReasonModels.Remove(entity: data);
+            context.UnemployedTimeModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();
