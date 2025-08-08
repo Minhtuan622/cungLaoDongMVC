@@ -1,3 +1,4 @@
+using cungLaoDong.Areas.Education.Models;
 using cungLaoDong.Models;
 using cungLaoDong.Areas.Unemployed.Models;
 

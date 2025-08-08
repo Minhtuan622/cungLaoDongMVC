@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cungLaoDong.Models;
+namespace cungLaoDong.Areas.Education.Models;
 
 [Table("cung_dm_trinhdophothong")]
 public class GeneralEducationLevelModel

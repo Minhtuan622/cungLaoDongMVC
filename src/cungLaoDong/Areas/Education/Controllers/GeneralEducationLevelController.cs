@@ -1,10 +1,10 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Education.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
-
+namespace cungLaoDong.Areas.Education.Controllers;
+[Area("Education")]
 public class GeneralEducationLevelController(ApplicationDbContext context) : Controller
 {
     // GET
