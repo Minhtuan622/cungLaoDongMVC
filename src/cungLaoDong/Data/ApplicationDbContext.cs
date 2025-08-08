@@ -1,4 +1,9 @@
-﻿using cungLaoDong.Models;
+using cungLaoDong.Models;
+using cungLaoDong.Areas.Employees.Models;
+using cungLaoDong.Areas.Education.Models;
+using cungLaoDong.Areas.Unemployed.Models;
+using cungLaoDong.Areas.Jobs.Models;
+using cungLaoDong.Areas.Qualifications.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
