@@ -1,16 +1,17 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Jobs.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Jobs.Controllers;
 
-public class BusinessIndustryController(ApplicationDbContext context) : Controller
+[Area("Jobs")]
+public class JobsController(ApplicationDbContext context) : Controller
 {
     // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.BusinessIndustryModels.ToListAsync());
+        return View(model: await context.JobModels.ToListAsync());
     }
 
     // GET
@@ -22,7 +23,7 @@ public class BusinessIndustryController(ApplicationDbContext context) : Controll
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(BusinessIndustryModel model)
+    public async Task<IActionResult> Add(JobModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -42,7 +43,7 @@ public class BusinessIndustryController(ApplicationDbContext context) : Controll
             return NotFound();
         }
 
-        var data = await context.FindAsync<BusinessIndustryModel>(keyValues: id);
+        var data = await context.FindAsync<JobModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -54,9 +55,9 @@ public class BusinessIndustryController(ApplicationDbContext context) : Controll
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, BusinessIndustryModel model)
+    public async Task<IActionResult> Edit(int id, JobModel model)
     {
-        var data = await context.FindAsync<BusinessIndustryModel>(keyValues: id);
+        var data = await context.FindAsync<JobModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -80,13 +81,14 @@ public class BusinessIndustryController(ApplicationDbContext context) : Controll
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.BusinessIndustryModels.FindAsync(keyValues: id);
+        var data = await context.JobModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.BusinessIndustryModels.Remove(entity: data);
+            context.JobModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();
         return RedirectToAction(actionName: nameof(Index));
     }
+
 }

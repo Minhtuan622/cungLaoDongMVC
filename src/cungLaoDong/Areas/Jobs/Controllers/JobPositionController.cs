@@ -1,16 +1,16 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Jobs.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Jobs.Controllers;
 
-public class JobsController(ApplicationDbContext context) : Controller
+[Area("Jobs")]
+public class JobPositionController(ApplicationDbContext context) : Controller
 {
-    // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.JobModels.ToListAsync());
+        return View(model: await context.JobPositionModels.ToListAsync());
     }
 
     // GET
@@ -22,7 +22,7 @@ public class JobsController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(JobModel model)
+    public async Task<IActionResult> Add(JobPositionModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -42,7 +42,7 @@ public class JobsController(ApplicationDbContext context) : Controller
             return NotFound();
         }
 
-        var data = await context.FindAsync<JobModel>(keyValues: id);
+        var data = await context.FindAsync<JobPositionModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -54,9 +54,9 @@ public class JobsController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, JobModel model)
+    public async Task<IActionResult> Edit(int id, JobPositionModel model)
     {
-        var data = await context.FindAsync<JobModel>(keyValues: id);
+        var data = await context.FindAsync<JobPositionModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -67,10 +67,7 @@ public class JobsController(ApplicationDbContext context) : Controller
             return View(model: model);
         }
         
-        data.Code = model.Code;
-        data.Level =  model.Level;
         data.Name = model.Name;
-        data.Note = model.Note;
         context.Update(entity: data);
         await context.SaveChangesAsync();
         return RedirectToAction(actionName: nameof(Index));
@@ -80,14 +77,13 @@ public class JobsController(ApplicationDbContext context) : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.JobModels.FindAsync(keyValues: id);
+        var data = await context.JobPositionModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.JobModels.Remove(entity: data);
+            context.JobPositionModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();
         return RedirectToAction(actionName: nameof(Index));
     }
-
 }

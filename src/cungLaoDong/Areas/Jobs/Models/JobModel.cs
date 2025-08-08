@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cungLaoDong.Models;
+namespace cungLaoDong.Areas.Jobs.Models;
 
 [Table(name: "cung_dm_congviec")]
 public class JobModel

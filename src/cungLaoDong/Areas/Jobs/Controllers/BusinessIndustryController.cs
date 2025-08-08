@@ -1,15 +1,17 @@
 using cungLaoDong.Data;
-using cungLaoDong.Models;
+using cungLaoDong.Areas.Jobs.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Jobs.Controllers;
 
-public class JobPositionController(ApplicationDbContext context) : Controller
+[Area("Jobs")]
+public class BusinessIndustryController(ApplicationDbContext context) : Controller
 {
+    // GET
     public async Task<IActionResult> Index()
     {
-        return View(model: await context.JobPositionModels.ToListAsync());
+        return View(model: await context.BusinessIndustryModels.ToListAsync());
     }
 
     // GET
@@ -21,7 +23,7 @@ public class JobPositionController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Add(JobPositionModel model)
+    public async Task<IActionResult> Add(BusinessIndustryModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -41,7 +43,7 @@ public class JobPositionController(ApplicationDbContext context) : Controller
             return NotFound();
         }
 
-        var data = await context.FindAsync<JobPositionModel>(keyValues: id);
+        var data = await context.FindAsync<BusinessIndustryModel>(keyValues: id);
         if (data is null)
         {
             return NotFound();
@@ -53,9 +55,9 @@ public class JobPositionController(ApplicationDbContext context) : Controller
     // POST
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, JobPositionModel model)
+    public async Task<IActionResult> Edit(int id, BusinessIndustryModel model)
     {
-        var data = await context.FindAsync<JobPositionModel>(keyValues: id);
+        var data = await context.FindAsync<BusinessIndustryModel>(keyValues: id);
         if (id != data!.Id)
         {
             return NotFound();
@@ -66,7 +68,10 @@ public class JobPositionController(ApplicationDbContext context) : Controller
             return View(model: model);
         }
         
+        data.Code = model.Code;
+        data.Level =  model.Level;
         data.Name = model.Name;
+        data.Note = model.Note;
         context.Update(entity: data);
         await context.SaveChangesAsync();
         return RedirectToAction(actionName: nameof(Index));
@@ -76,10 +81,10 @@ public class JobPositionController(ApplicationDbContext context) : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await context.JobPositionModels.FindAsync(keyValues: id);
+        var data = await context.BusinessIndustryModels.FindAsync(keyValues: id);
         if (data is not null)
         {
-            context.JobPositionModels.Remove(entity: data);
+            context.BusinessIndustryModels.Remove(entity: data);
         }
 
         await context.SaveChangesAsync();
