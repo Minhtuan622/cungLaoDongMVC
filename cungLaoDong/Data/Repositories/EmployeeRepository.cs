@@ -1,4 +1,5 @@
 using cungLaoDong.Models;
+using cungLaoDong.Models.ViewModels.Employee;
 using Microsoft.EntityFrameworkCore;
 
 namespace cungLaoDong.Data.Repositories;
@@ -13,6 +14,28 @@ public class EmployeeRepository(ApplicationDbContext context) : IEmployeeReposit
     public async Task<EmployeeFormModel?> GetEmployeeByIdAsync(int id)
     {
         return await context.EmployeeModels.FirstOrDefaultAsync(e => e.Id == id);
+    }
+
+    public async Task<EmployeeInfoViewModel> GetEmployeeInfoByIdAsync(int id)
+    {
+        var employee = GetEmployeeByIdAsync(id);
+        if (employee.Result is null)
+        {
+            return new EmployeeInfoViewModel();
+        }
+        
+        return new EmployeeInfoViewModel
+        {
+            Id = employee.Result.Id,
+            FullName = employee.Result.FullName,
+            Birthday = employee.Result.Birthday,
+            Gender = employee.Result.Gender ? "Nam" : "Nữ",
+            Identity = employee.Result.Identity,
+            PermanentAddress = employee.Result.PermanentAddress,
+            TemporaryResidenceAddress = employee.Result.TemporaryResidenceAddress,
+            EconomyStatus = context.EconomyStatusModels.Find(employee.Result.EconomyStatus),
+            UnemployedReason = context.UnemployedReasonModels.Find(employee.Result.UnemployedReason)
+        };
     }
 
     public async Task<IEnumerable<EmployeeFormModel>> GetEmployeesByFilterAsync(EmployeeFilterModel filter)

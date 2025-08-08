@@ -1,3 +1,4 @@
+@model cungLaoDong.Models.ViewModels.Employee.ShowEmployeeViewModel
 
 @{
     ViewBag.Title = "title";
@@ -22,47 +23,30 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Họ và tên:</span>
-                <span class="text-primary" id="ho_ten">Nguyễn Văn A</span>
+                <span class="text-primary" id="ho_ten">@Model.EmployeeInfo?.Result.FullName</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Ngày sinh:</span>
-                <span class="text-primary" id="ngay_sinh">01/01/1990</span>
+                <span class="text-primary" id="ngay_sinh">@Model.EmployeeInfo?.Result.Birthday</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Giới tính:</span>
-                <span class="text-primary" id="gioi_tinh">Nam</span>
+                <span class="text-primary" id="gioi_tinh">@Model.EmployeeInfo?.Result.Gender</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Số CCCD:</span>
-                <span class="text-primary" id="cccd">123456789012</span>
+                <span class="text-primary" id="cccd">@Model.EmployeeInfo?.Result.Identity</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 mb-3">
-                <span class="fw-bold">Tỉnh/TP thường trú:</span>
-                <span class="text-primary" id="thuong_tru_tinh">Hà Nội</span>
+                <span class="fw-bold">Địa chỉ thường trú:</span>
+                <span class="text-primary" id="thuong_tru_tinh">@Model.EmployeeInfo?.Result.PermanentAddress</span>
             </div>
             <div class="col-md-4 mb-3">
-                <span class="fw-bold">Phường/Xã:</span>
-                <span class="text-primary" id="thuong_tru_phuongxa">Quận Ba Đình</span>
-            </div>
-            <div class="col-md-4 mb-3">
-                <span class="fw-bold">Địa chỉ chi tiết:</span>
-                <span class="text-primary" id="thuong_tru_diachichitiet">Phố Láng Hạ</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <span class="fw-bold">Tỉnh/TP tạm trú:</span>
-                <span class="text-primary" id="tam_tru_tinh">TP.HCM</span>
-            </div>
-            <div class="col-md-4 mb-3">
-                <span class="fw-bold">Phường/Xã:</span>
-                <span class="text-primary" id="tam_tru_phuongxa">Quận 1</span>
-            </div>
-            <div class="col-md-4 mb-3">
-                <span class="fw-bold">Địa chỉ chi tiết:</span>
-                <span class="text-primary" id="tam_tru_diachichitiet">Phố Nguyễn Huệ</span>
+                <span class="fw-bold">Địa chỉ hiện tại:</span>
+                <span class="text-primary"
+                      id="tam_tru_tinh">@Model.EmployeeInfo?.Result.TemporaryResidenceAddress</span>
             </div>
         </div>
     </div>
@@ -76,15 +60,18 @@
         <div class="row">
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Người khuyết tật:</span>
-                <span class="text-primary" id="khuyt_tat">Không</span>
+                <span class="text-primary"
+                      id="khuyt_tat">@(Model.Priority?.Kind?.Contains(1) == true ? "Có" : "Không")</span>
             </div>
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Hộ nghèo, cận nghèo:</span>
-                <span class="text-primary" id="ho_ngheo">Không</span>
+                <span class="text-primary"
+                      id="ho_ngheo">@(Model.Priority?.Kind?.Contains(2) == true ? "Có" : "Không")</span>
             </div>
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Dân tộc thiểu số:</span>
-                <span class="text-primary" id="dan_toc">Không</span>
+                <span class="text-primary"
+                      id="dan_toc">@(Model.Priority?.Kind?.Contains(3) == true ? "Có" : "Không")</span>
             </div>
         </div>
     </div>
@@ -98,15 +85,17 @@
         <div class="row">
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Trình độ phổ thông:</span>
-                <span class="text-primary" id="trinh_do_pho_thong">Hoàn thành THPT</span>
+                <span class="text-primary"
+                      id="trinh_do_pho_thong">@(Model.GeneralEducationLevels?.EducationLevel?.Name)</span>
             </div>
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Trình độ chuyên môn:</span>
-                <span class="text-primary" id="trinh_do_chuyen_mon">Đại học</span>
+                <span class="text-primary"
+                      id="trinh_do_chuyen_mon">@(Model.GeneralEducationLevels?.ProfessionalQualification?.Name)</span>
             </div>
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Chuyên ngành đào tạo:</span>
-                <span class="text-primary" id="chuyen_nganh">Công nghệ thông tin</span>
+                <span class="text-primary" id="chuyen_nganh">@(Model.GeneralEducationLevels?.Major?.Name)</span>
             </div>
         </div>
     </div>
@@ -120,39 +109,88 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Tình trạng:</span>
-                <span class="text-primary" id="tinh_trang_viec_lam">Có việc làm</span>
+                <span class="text-primary"
+                      id="tinh_trang_viec_lam">@(Model.EmployeeInfo?.Result.EconomyStatus?.Name)</span>
             </div>
         </div>
-        <div id="employed-details">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Vị thế việc làm:</span>
-                    <span class="text-primary" id="vi_tri_viec_lam">Làm công ăn lương</span>
+        @switch (Model.EmployeeInfo?.Result.EconomyStatus?.Id)
+        {
+            case 1:
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Vị thế việc làm:</span>
+                        <span class="text-primary" id="vi_tri_viec_lam">@(Model.HasJob?.JobPosition?.Name)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Công việc cụ thể:</span>
+                        <span class="text-primary" id="cong_viec">@(Model.HasJob?.Job?.Name)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Nơi làm việc:</span>
+                        <span class="text-primary" id="noi_lam_viec">Công ty XYZ</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Công việc cụ thể:</span>
-                    <span class="text-primary" id="cong_viec">Lập trình viên</span>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Tỉnh/TP làm việc:</span>
+                        <span class="text-primary" id="lam_viec_tinh">@(Model.HasJob?.Province)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Phường/Xã:</span>
+                        <span class="text-primary" id="lam_viec_phuongxa">@(Model.HasJob?.Weird)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Địa chỉ chi tiết:</span>
+                        <span class="text-primary" id="lam_viec_diachichitiet">@(Model.HasJob?.Address)</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Nơi làm việc:</span>
-                    <span class="text-primary" id="noi_lam_viec">Công ty XYZ</span>
+                break;
+            case 2:
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Thời gian thất nghiệp:</span>
+                        <span class="text-primary" id="vi_tri_viec_lam">@(Model.Unemployed?.Time?.Name)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Nhu cầu việc làm:</span>
+                        <span class="text-primary" id="cong_viec">@(Model.Unemployed?.Demand)</span>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Đã từng làm việc:</span>
+                        <span class="text-primary" id="noi_lam_viec">@(Model.Unemployed?.Status)</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Tỉnh/TP làm việc:</span>
-                    <span class="text-primary" id="lam_viec_tinh">Hà Nội</span>
+                break;
+            case 3:
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <span class="fw-bold">Lý do không tham gia:</span>
+                        <span class="text-primary" id="vi_tri_viec_lam">@(Model.UnemployedReason?.Name)</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Phường/Xã:</span>
-                    <span class="text-primary" id="lam_viec_phuongxa">Quận Hoàn Kiếm</span>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <span class="fw-bold">Địa chỉ chi tiết:</span>
-                    <span class="text-primary" id="lam_viec_diachichitiet">Phố Hàng Bông</span>
-                </div>
-            </div>
-        </div>
+
+                @if (Model.UnemployedReason?.Id == 1)
+                {
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <span class="fw-bold">Trình độ đào tạo:</span>
+                            <span class="text-primary" id="vi_tri_viec_lam">@(Model.Studying?.EducationLevel?.Name)</span>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <span class="fw-bold">Chuyên ngành đào tạo:</span>
+                            <span class="text-primary" id="cong_viec">@(Model.Studying?.Major.Name)</span>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <span class="fw-bold">Thời gian dự kiến tốt nghiệp:</span>
+                            <span class="text-primary" id="noi_lam_viec">@(Model.Studying?.GraduateTime)</span>
+                        </div>
+                    </div>
+                }
+                break;
+            default:
+                <div>Chưa có thông tin</div>
+                break;
+        }
     </div>
 </div>
 

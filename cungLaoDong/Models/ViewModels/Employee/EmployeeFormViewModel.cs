@@ -1,6 +1,6 @@
-namespace cungLaoDong.Models.ViewModels;
+namespace cungLaoDong.Models.ViewModels.Employee;
 
-public class EmployeeViewModel
+public class EmployeeFormViewModel
 {
     public required List<AddressModel> Addresses { get; set; }
     public required List<GeneralEducationLevelModel> GeneralEducationLevels { get; set; }

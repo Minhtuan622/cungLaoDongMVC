@@ -1,4 +1,5 @@
 using cungLaoDong.Models;
+using cungLaoDong.Models.ViewModels.Employee;
 
 namespace cungLaoDong.Data.Repositories;
 
@@ -6,6 +7,7 @@ public interface IEmployeeRepository
 {
     Task<IEnumerable<EmployeeFormModel>> GetAllEmployeesAsync();
     Task<EmployeeFormModel?> GetEmployeeByIdAsync(int id);
+    Task<EmployeeInfoViewModel> GetEmployeeInfoByIdAsync(int id);
     Task<IEnumerable<EmployeeFormModel>> GetEmployeesByFilterAsync(EmployeeFilterModel filter);
     Task<EmployeeFormModel> AddEmployeeAsync(EmployeeFormModel employee);
     Task<EmployeeFormModel> UpdateEmployeeAsync(EmployeeFormModel employee);

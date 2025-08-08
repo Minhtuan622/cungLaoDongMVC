@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\coding_space\\cungLaoDong\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\views\\employees\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\models\\viewmodels\\employee\\employeeinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\models\\viewmodels\\employee\\employeeinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\models\\viewmodels\\employee\\showemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\models\\viewmodels\\employee\\showemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\models\\viewmodels\\employee\\createemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\models\\viewmodels\\employee\\createemployeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\models\\employeeformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\models\\employeeformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\views\\employees\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\views\\employees\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "cungLaoDong\\Views\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "cungLaoDong\\Views\\Employees\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T08:20:50.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeInfoViewModel.cs",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\EmployeeInfoViewModel.cs",
+              "RelativeDocumentMoniker": "cungLaoDong\\Models\\ViewModels\\Employee\\EmployeeInfoViewModel.cs",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\EmployeeInfoViewModel.cs",
+              "RelativeToolTip": "cungLaoDong\\Models\\ViewModels\\Employee\\EmployeeInfoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:14:31.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowEmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\ShowEmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "cungLaoDong\\Models\\ViewModels\\Employee\\ShowEmployeeViewModel.cs",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\ShowEmployeeViewModel.cs",
+              "RelativeToolTip": "cungLaoDong\\Models\\ViewModels\\Employee\\ShowEmployeeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:14:26.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeFormModel.cs",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\EmployeeFormModel.cs",
+              "RelativeDocumentMoniker": "cungLaoDong\\Models\\EmployeeFormModel.cs",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\EmployeeFormModel.cs",
+              "RelativeToolTip": "cungLaoDong\\Models\\EmployeeFormModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:52:26.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateEmployeeViewModel.cs",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\CreateEmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "cungLaoDong\\Models\\ViewModels\\Employee\\CreateEmployeeViewModel.cs",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Models\\ViewModels\\Employee\\CreateEmployeeViewModel.cs",
+              "RelativeToolTip": "cungLaoDong\\Models\\ViewModels\\Employee\\CreateEmployeeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:47:28.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Edit.cshtml",
+              "RelativeDocumentMoniker": "cungLaoDong\\Views\\Employees\\Edit.cshtml",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Edit.cshtml",
+              "RelativeToolTip": "cungLaoDong\\Views\\Employees\\Edit.cshtml",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAALUAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T07:41:31.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Add.cshtml",
+              "RelativeDocumentMoniker": "cungLaoDong\\Views\\Employees\\Add.cshtml",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Add.cshtml",
+              "RelativeToolTip": "cungLaoDong\\Views\\Employees\\Add.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T07:41:21.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "cungLaoDong\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "cungLaoDong\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:33:55.612Z"
             }
           ]
         }

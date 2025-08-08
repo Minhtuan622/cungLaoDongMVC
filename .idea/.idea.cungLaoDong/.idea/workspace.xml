@@ -9,10 +9,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44a0644b-6d75-45c4-a0f4-f976839773ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cungLaoDong/Models/ViewModels/Employee/EmployeeInfoViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cungLaoDong/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/HasJobFormModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/HasJobFormModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/StudyingFormModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/StudyingFormModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/UnemployedFormModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/UnemployedFormModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.metadata.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.projects.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/cunglaodong.strings.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cungLaoDong/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cungLaoDong/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Controllers/EmployeesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Data/Repositories/EmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Data/Repositories/EmployeeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Data/Repositories/IEmployeeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Data/Repositories/IEmployeeRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/DTOs/EmployeeDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/ViewModels/CreateEmployeeViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Models/ViewModels/EmployeeViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/Views/Employees/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/bin/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/cungLaoDong.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/ref/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/refint/cungLaoDong.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/cungLaoDong.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/cungLaoDong.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/cungLaoDong/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +106,6 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Controllers/UnemployedTimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/AddressModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/BusinessIndustryModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/DTOs/EmployeeDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EconomyStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EducationLevelModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/EmployeeFormModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -86,8 +122,7 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedReasonModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedStatusModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/UnemployedTimeModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/ViewModels/CreateEmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/ViewModels/EmployeeViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cungLaoDong/Models/ViewModels/Employee/EmployeeInfoViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/AccountManagement/Admin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Auth/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/Chats/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -107,6 +142,9 @@
     <setting file="file://$PROJECT_DIR$/cungLaoDong/Views/UnemployedTime/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -119,26 +157,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.cungLaoDong: http.executor": "Debug",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Aspire.Configurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.cungLaoDong: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Aspire.Configurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.cungLaoDong: http">
     <configuration name="cungLaoDong: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/cungLaoDong/cungLaoDong.csproj" />
@@ -197,6 +235,7 @@
       <workItem from="1754272078431" duration="19636000" />
       <workItem from="1754359164453" duration="20738000" />
       <workItem from="1754444479183" duration="4531000" />
+      <workItem from="1754540711435" duration="9468000" />
     </task>
     <servers />
   </component>

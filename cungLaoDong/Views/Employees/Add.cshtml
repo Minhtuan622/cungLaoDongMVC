@@ -1,4 +1,4 @@
-@model cungLaoDong.Models.ViewModels.EmployeeViewModel
+@model cungLaoDong.Models.ViewModels.Employee.EmployeeFormViewModel
 
 @{
     ViewBag.Title = "Thêm mới người lao động";
@@ -40,8 +40,8 @@
                         </label>
                         <select asp-for="EmployeeForm.Gender" class="form-select" required>
                             <option value="" disabled selected>-- Chọn giới tính --</option>
-                            <option value="1">Nam</option>
-                            <option value="0">Nữ</option>
+                            <option value="true">Nam</option>
+                            <option value="false">Nữ</option>
                         </select>
                         <span asp-validation-for="EmployeeForm.Gender" class="text-danger"></span>
                     </div>

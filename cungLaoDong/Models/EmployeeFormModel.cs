@@ -1,7 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.InteropServices.JavaScript;
 
 namespace cungLaoDong.Models;
 
@@ -47,19 +46,19 @@ public class EmployeeFormModel
     [Column("nld_thuong_tru_diachichitiet")]
     public string? PermanentAddress { get; set; }
 
-    [DisplayName("Tỉnh hiện tại")] 
+    [DisplayName("Tỉnh hiện tại")]
     [Column("nld_tam_tru_tinh_id")]
     public string? TemporaryResidenceProvince { get; set; }
 
-    [DisplayName("Phường / xã hiện tại")] 
+    [DisplayName("Phường / xã hiện tại")]
     [Column("nld_tam_tru_phuongxa_id")]
     public string? TemporaryResidenceWard { get; set; }
 
-    [DisplayName("Địa chỉ hiện tại")] 
+    [DisplayName("Địa chỉ hiện tại")]
     [Column("nld_tam_tru_diachichitiet")]
     public string? TemporaryResidenceAddress { get; set; }
 
-    [DisplayName("Tình trạng kinh tế")] 
+    [DisplayName("Tình trạng kinh tế")]
     [Column("ttkt_loai")]
     public int EconomyStatus { get; set; }
 

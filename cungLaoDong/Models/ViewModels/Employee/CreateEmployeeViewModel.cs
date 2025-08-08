@@ -1,4 +1,4 @@
-namespace cungLaoDong.Models.ViewModels;
+namespace cungLaoDong.Models.ViewModels.Employee;
 
 public class CreateEmployeeViewModel
 {
