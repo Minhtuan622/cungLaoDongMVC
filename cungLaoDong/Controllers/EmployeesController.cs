@@ -34,8 +34,8 @@ public class EmployeesController(
 
     public Task<IActionResult> Show(int? id)
     {
-        var employee = employeeRepository.GetEmployeeInfoByIdAsync(id ?? -1);
-        var employeeData = employeeRepository.GetEmployeeByIdAsync(employee.Id);
+        var employeeInfo = employeeRepository.GetEmployeeInfoByIdAsync(id ?? -1);
+        var employeeData = employeeRepository.GetEmployeeByIdAsync(employeeInfo.Result.Id);
         var permanentAddress =
             context.AddressModels.Find(employeeData.Result?.PermanentProvince)?.Name +
             context.AddressModels.Find(employeeData.Result?.PermanentWard)?.Name +
@@ -44,36 +44,36 @@ public class EmployeesController(
             context.AddressModels.Find(employeeData.Result?.TemporaryResidenceProvince)?.Name +
             context.AddressModels.Find(employeeData.Result?.TemporaryResidenceWard)?.Name +
             context.AddressModels.Find(employeeData.Result?.TemporaryResidenceAddress)?.Name;
-        var hasJob = context.HasJobFormModels.Find(employee.Result.Id);
+        var hasJob = context.HasJobFormModels.Find(employeeData.Result?.Id);
         var hasJobViewModel = new HasJobViewModel();
         if (hasJob is not null)
         {
             hasJobViewModel.Id = hasJob.Id;
             hasJobViewModel.Job = context.JobModels.Find(hasJob.JobId);
             hasJobViewModel.JobPosition = context.JobPositionModels.Find(hasJob.JobPositionId);
-            hasJobViewModel.Employee = employee;
+            hasJobViewModel.Employee = employeeInfo;
             hasJobViewModel.Province = context.AddressModels.Find(hasJob.AddressProvince.ToString())?.Name;
             hasJobViewModel.Weird = context.AddressModels.Find(hasJob.AddressWeird.ToString())?.Name;
             hasJobViewModel.Address = context.AddressModels.Find(hasJob.AddressInfo)?.Name;
         }
 
-        var unemployed = context.UnemployedFormModels.Find(employee.Result.Id);
+        var unemployed = context.UnemployedFormModels.Find(employeeData.Result?.Id);
         var unemployedViewModel = new UnemployedViewModel();
         if (unemployed is not null)
         {
             unemployedViewModel.Id = unemployed.Id;
-            unemployedViewModel.Employee = employee;
+            unemployedViewModel.Employee = employeeInfo;
             unemployedViewModel.Time = context.UnemployedTimeModels.Find(unemployed.TimeId);
             unemployedViewModel.Status = unemployed.Status ? "Đã từng làm việc" : "Chưa từng làm việc";
             unemployedViewModel.Demand = unemployed.Demand;
         }
 
-        var priority = context.PriorityFormModels.Find(employee.Result.Id);
+        var priority = context.PriorityFormModels.Find(employeeData.Result?.Id);
         var priorityViewModel = new PriorityViewModel();
         if (priority is not null)
         {
             priorityViewModel.Id = priority.Id;
-            priorityViewModel.Employee = employee;
+            priorityViewModel.Employee = employeeInfo;
             if (priority.Kind is not null)
             {
                 priorityViewModel.Kind = JsonConvert.DeserializeObject<List<int>>(priority.Kind);
@@ -82,24 +82,24 @@ public class EmployeesController(
             priorityViewModel.People = context.PeopleModels.Find(priority.PeopleId);
         }
 
-        var education = context.GeneralEducationLevelsFormModels.Find(employee.Result.Id);
+        var education = context.GeneralEducationLevelsFormModels.Find(employeeData.Result?.Id);
         var generalEducationLevels = new GeneralEducationLevelsViewModel();
         if (education is not null)
         {
             generalEducationLevels.Id = education.Id;
-            generalEducationLevels.Employee = employee;
+            generalEducationLevels.Employee = employeeInfo;
             generalEducationLevels.EducationLevel = context.EducationLevelModels.Find(education.EducationLevelId);
             generalEducationLevels.ProfessionalQualification =
                 context.ProfessionalQualificationsModels.Find(education.ProfessionalQualificationId);
             generalEducationLevels.Major = context.MajorModels.Find(education.MajorId);
         }
 
-        var studying = context.StudyingFormModels.Find(employee.Result.Id);
+        var studying = context.StudyingFormModels.Find(employeeData.Result?.Id);
         var studyingViewModel = new StudyingViewModel();
         if (studying is not null)
         {
             studyingViewModel.Id = studying.Id;
-            studyingViewModel.Employee = employee;
+            studyingViewModel.Employee = employeeInfo;
             studyingViewModel.EducationLevel = context.EducationLevelModels.Find(studying.EducationLevel);
             studyingViewModel.GraduateTime = studyingViewModel.GraduateTime;
             studyingViewModel.Major = context.MajorModels.Find(studying.MajorId);
@@ -107,18 +107,18 @@ public class EmployeesController(
 
         var data = new ShowEmployeeViewModel
         {
-            EmployeeInfo = employee,
-            BusinessIndustry = context.BusinessIndustryModels.Find(employee.Result.Id),
-            EconomyStatus = context.EconomyStatusModels.Find(employee.Result.Id),
-            EducationLevel = context.EducationLevelModels.Find(employee.Result.Id),
-            GeneralEducationLevel = context.GeneralEducationLevelModels.Find(employee.Result.Id),
-            Job = context.JobModels.Find(employee.Result.Id),
-            JobPosition = context.JobPositionModels.Find(employee.Result.Id),
-            Major = context.MajorModels.Find(employee.Result.Id),
-            People = context.PeopleModels.Find(employee.Result.Id),
-            ProfessionalQualification = context.ProfessionalQualificationsModels.Find(employee.Result.Id),
-            UnemployedReason = context.UnemployedReasonModels.Find(employee.Result.Id),
-            UnemployedTime = context.UnemployedTimeModels.Find(employee.Result.Id),
+            EmployeeInfo = employeeInfo,
+            BusinessIndustry = context.BusinessIndustryModels.Find(employeeData.Result?.Id),
+            EconomyStatus = context.EconomyStatusModels.Find(employeeData.Result?.Id),
+            EducationLevel = context.EducationLevelModels.Find(employeeData.Result?.Id),
+            GeneralEducationLevel = context.GeneralEducationLevelModels.Find(employeeData.Result?.Id),
+            Job = context.JobModels.Find(employeeData.Result?.Id),
+            JobPosition = context.JobPositionModels.Find(employeeData.Result?.Id),
+            Major = context.MajorModels.Find(employeeData.Result?.Id),
+            People = context.PeopleModels.Find(employeeData.Result?.Id),
+            ProfessionalQualification = context.ProfessionalQualificationsModels.Find(employeeData.Result?.Id),
+            UnemployedReason = context.UnemployedReasonModels.Find(employeeData.Result?.UnemployedReason),
+            UnemployedTime = context.UnemployedTimeModels.Find(employeeData.Result?.Id),
             PermanentAddress = permanentAddress,
             TemporaryResidenceAddress = temporaryResidenceAddress,
             HasJob = hasJobViewModel,
