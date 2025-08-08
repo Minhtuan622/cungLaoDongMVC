@@ -2,7 +2,7 @@
 {
     public class ShowEmployeeViewModel
     {
-        public Task<EmployeeInfoViewModel>? EmployeeInfo { get; set; }
+        public EmployeeInfoViewModel? EmployeeInfo { get; set; }
         public string? PermanentAddress { get; set; }
         public string? TemporaryResidenceAddress { get; set; }
         public GeneralEducationLevelModel? GeneralEducationLevel { get; set; }

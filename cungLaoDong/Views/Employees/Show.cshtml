@@ -23,30 +23,30 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Họ và tên:</span>
-                <span class="text-primary" id="ho_ten">@Model.EmployeeInfo?.Result.FullName</span>
+                <span class="text-primary" id="ho_ten">@Model.EmployeeInfo?.FullName</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Ngày sinh:</span>
-                <span class="text-primary" id="ngay_sinh">@Model.EmployeeInfo?.Result.Birthday</span>
+                <span class="text-primary" id="ngay_sinh">@Model.EmployeeInfo?.Birthday</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Giới tính:</span>
-                <span class="text-primary" id="gioi_tinh">@Model.EmployeeInfo?.Result.Gender</span>
+                <span class="text-primary" id="gioi_tinh">@Model.EmployeeInfo?.Gender</span>
             </div>
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Số CCCD:</span>
-                <span class="text-primary" id="cccd">@Model.EmployeeInfo?.Result.Identity</span>
+                <span class="text-primary" id="cccd">@Model.EmployeeInfo?.Identity</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Địa chỉ thường trú:</span>
-                <span class="text-primary" id="thuong_tru_tinh">@Model.EmployeeInfo?.Result.PermanentAddress</span>
+                <span class="text-primary" id="thuong_tru_tinh">@Model.EmployeeInfo?.PermanentAddress</span>
             </div>
             <div class="col-md-4 mb-3">
                 <span class="fw-bold">Địa chỉ hiện tại:</span>
                 <span class="text-primary"
-                      id="tam_tru_tinh">@Model.EmployeeInfo?.Result.TemporaryResidenceAddress</span>
+                      id="tam_tru_tinh">@Model.EmployeeInfo?.TemporaryResidenceAddress</span>
             </div>
         </div>
     </div>
@@ -110,10 +110,10 @@
             <div class="col-md-6 mb-3">
                 <span class="fw-bold">Tình trạng:</span>
                 <span class="text-primary"
-                      id="tinh_trang_viec_lam">@(Model.EmployeeInfo?.Result.EconomyStatus?.Name)</span>
+                      id="tinh_trang_viec_lam">@(Model.EmployeeInfo?.EconomyStatus?.Name)</span>
             </div>
         </div>
-        @switch (Model.EmployeeInfo?.Result.EconomyStatus?.Id)
+        @switch (Model.EmployeeInfo?.EconomyStatus?.Id)
         {
             case 1:
                 <div class="row">

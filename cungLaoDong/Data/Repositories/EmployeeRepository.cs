@@ -18,23 +18,23 @@ public class EmployeeRepository(ApplicationDbContext context) : IEmployeeReposit
 
     public async Task<EmployeeInfoViewModel> GetEmployeeInfoByIdAsync(int id)
     {
-        var employee = GetEmployeeByIdAsync(id);
-        if (employee.Result is null)
+        var employee = await GetEmployeeByIdAsync(id);
+        if (employee is null)
         {
             return new EmployeeInfoViewModel();
         }
-        
+
         return new EmployeeInfoViewModel
         {
-            Id = employee.Result.Id,
-            FullName = employee.Result.FullName,
-            Birthday = employee.Result.Birthday,
-            Gender = employee.Result.Gender ? "Nam" : "Nữ",
-            Identity = employee.Result.Identity,
-            PermanentAddress = employee.Result.PermanentAddress,
-            TemporaryResidenceAddress = employee.Result.TemporaryResidenceAddress,
-            EconomyStatus = context.EconomyStatusModels.Find(employee.Result.EconomyStatus),
-            UnemployedReason = context.UnemployedReasonModels.Find(employee.Result.UnemployedReason)
+            Id = employee.Id,
+            FullName = employee.FullName,
+            Birthday = employee.Birthday,
+            Gender = employee.Gender ? "Nam" : "Nữ",
+            Identity = employee.Identity,
+            PermanentAddress = employee.PermanentAddress,
+            TemporaryResidenceAddress = employee.TemporaryResidenceAddress,
+            EconomyStatus = context.EconomyStatusModels.Find(employee.EconomyStatus),
+            UnemployedReason = context.UnemployedReasonModels.Find(employee.UnemployedReason)
         };
     }
 

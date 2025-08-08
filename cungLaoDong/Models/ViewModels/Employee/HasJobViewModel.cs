@@ -3,7 +3,7 @@ namespace cungLaoDong.Models.ViewModels.Employee;
 public class HasJobViewModel
 {
     public int? Id { get; set; }
-    public Task<EmployeeInfoViewModel>? Employee { get; set; }
+    public EmployeeInfoViewModel? Employee { get; set; }
     public JobPositionModel? JobPosition { get; set; }
     public JobModel? Job { get; set; }
     public string? Province { get; set; }
