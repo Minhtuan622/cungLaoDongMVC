@@ -20,8 +20,10 @@ public class EmployeesController(
         {
             var employees = await employeeRepository.GetAllEmployeesAsync();
 
-            var data = employees
-                .Select(employee => employeeRepository.GetEmployeeInfoByIdAsync(employee.Id)).ToList();
+            var dataTasks = employees
+                .Select(employee => employeeRepository.GetEmployeeInfoByIdAsync(employee.Id));
+
+            var data = await Task.WhenAll(dataTasks);
 
             return View(data);
         }
@@ -32,19 +34,35 @@ public class EmployeesController(
         }
     }
 
-    public Task<IActionResult> Show(int? id)
+    public async Task<IActionResult> Show(int? id)
     {
-        var employeeInfo = employeeRepository.GetEmployeeInfoByIdAsync(id ?? -1);
-        var employeeData = employeeRepository.GetEmployeeByIdAsync(employeeInfo.Result.Id);
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var employeeInfo = await employeeRepository.GetEmployeeInfoByIdAsync(id.Value);
+        if (employeeInfo == null)
+        {
+            return NotFound();
+        }
+
+        var employeeData = await employeeRepository.GetEmployeeByIdAsync(employeeInfo.Id);
+        if (employeeData == null)
+        {
+            return NotFound();
+        }
+
         var permanentAddress =
-            context.AddressModels.Find(employeeData.Result?.PermanentProvince)?.Name +
-            context.AddressModels.Find(employeeData.Result?.PermanentWard)?.Name +
-            context.AddressModels.Find(employeeData.Result?.PermanentAddress)?.Name;
+            context.AddressModels.Find(employeeData.PermanentProvince)?.Name +
+            context.AddressModels.Find(employeeData.PermanentWard)?.Name +
+            context.AddressModels.Find(employeeData.PermanentAddress)?.Name;
         var temporaryResidenceAddress =
-            context.AddressModels.Find(employeeData.Result?.TemporaryResidenceProvince)?.Name +
-            context.AddressModels.Find(employeeData.Result?.TemporaryResidenceWard)?.Name +
-            context.AddressModels.Find(employeeData.Result?.TemporaryResidenceAddress)?.Name;
-        var hasJob = context.HasJobFormModels.Find(employeeData.Result?.Id);
+            context.AddressModels.Find(employeeData.TemporaryResidenceProvince)?.Name +
+            context.AddressModels.Find(employeeData.TemporaryResidenceWard)?.Name +
+            context.AddressModels.Find(employeeData.TemporaryResidenceAddress)?.Name;
+
+        var hasJob = context.HasJobFormModels.Find(employeeData.Id);
         var hasJobViewModel = new HasJobViewModel();
         if (hasJob is not null)
         {
@@ -57,7 +75,7 @@ public class EmployeesController(
             hasJobViewModel.Address = context.AddressModels.Find(hasJob.AddressInfo)?.Name;
         }
 
-        var unemployed = context.UnemployedFormModels.Find(employeeData.Result?.Id);
+        var unemployed = context.UnemployedFormModels.Find(employeeData.Id);
         var unemployedViewModel = new UnemployedViewModel();
         if (unemployed is not null)
         {
@@ -68,7 +86,7 @@ public class EmployeesController(
             unemployedViewModel.Demand = unemployed.Demand;
         }
 
-        var priority = context.PriorityFormModels.Find(employeeData.Result?.Id);
+        var priority = context.PriorityFormModels.Find(employeeData.Id);
         var priorityViewModel = new PriorityViewModel();
         if (priority is not null)
         {
@@ -82,7 +100,7 @@ public class EmployeesController(
             priorityViewModel.People = context.PeopleModels.Find(priority.PeopleId);
         }
 
-        var education = context.GeneralEducationLevelsFormModels.Find(employeeData.Result?.Id);
+        var education = context.GeneralEducationLevelsFormModels.Find(employeeData.Id);
         var generalEducationLevels = new GeneralEducationLevelsViewModel();
         if (education is not null)
         {
@@ -94,31 +112,31 @@ public class EmployeesController(
             generalEducationLevels.Major = context.MajorModels.Find(education.MajorId);
         }
 
-        var studying = context.StudyingFormModels.Find(employeeData.Result?.Id);
+        var studying = context.StudyingFormModels.Find(employeeData.Id);
         var studyingViewModel = new StudyingViewModel();
         if (studying is not null)
         {
             studyingViewModel.Id = studying.Id;
             studyingViewModel.Employee = employeeInfo;
             studyingViewModel.EducationLevel = context.EducationLevelModels.Find(studying.EducationLevel);
-            studyingViewModel.GraduateTime = studyingViewModel.GraduateTime;
+            studyingViewModel.GraduateTime = studying.GraduateTime;
             studyingViewModel.Major = context.MajorModels.Find(studying.MajorId);
         }
 
         var data = new ShowEmployeeViewModel
         {
             EmployeeInfo = employeeInfo,
-            BusinessIndustry = context.BusinessIndustryModels.Find(employeeData.Result?.Id),
-            EconomyStatus = context.EconomyStatusModels.Find(employeeData.Result?.Id),
-            EducationLevel = context.EducationLevelModels.Find(employeeData.Result?.Id),
-            GeneralEducationLevel = context.GeneralEducationLevelModels.Find(employeeData.Result?.Id),
-            Job = context.JobModels.Find(employeeData.Result?.Id),
-            JobPosition = context.JobPositionModels.Find(employeeData.Result?.Id),
-            Major = context.MajorModels.Find(employeeData.Result?.Id),
-            People = context.PeopleModels.Find(employeeData.Result?.Id),
-            ProfessionalQualification = context.ProfessionalQualificationsModels.Find(employeeData.Result?.Id),
-            UnemployedReason = context.UnemployedReasonModels.Find(employeeData.Result?.UnemployedReason),
-            UnemployedTime = context.UnemployedTimeModels.Find(employeeData.Result?.Id),
+            BusinessIndustry = context.BusinessIndustryModels.Find(employeeData.Id),
+            EconomyStatus = context.EconomyStatusModels.Find(employeeData.Id),
+            EducationLevel = context.EducationLevelModels.Find(employeeData.Id),
+            GeneralEducationLevel = context.GeneralEducationLevelModels.Find(employeeData.Id),
+            Job = context.JobModels.Find(employeeData.Id),
+            JobPosition = context.JobPositionModels.Find(employeeData.Id),
+            Major = context.MajorModels.Find(employeeData.Id),
+            People = context.PeopleModels.Find(employeeData.Id),
+            ProfessionalQualification = context.ProfessionalQualificationsModels.Find(employeeData.Id),
+            UnemployedReason = context.UnemployedReasonModels.Find(employeeData.UnemployedReason),
+            UnemployedTime = context.UnemployedTimeModels.Find(employeeData.Id),
             PermanentAddress = permanentAddress,
             TemporaryResidenceAddress = temporaryResidenceAddress,
             HasJob = hasJobViewModel,
@@ -128,7 +146,7 @@ public class EmployeesController(
             Studying = studyingViewModel
         };
 
-        return Task.FromResult<IActionResult>(View(data));
+        return View(data);
     }
 
     public async Task<IActionResult> Add()
