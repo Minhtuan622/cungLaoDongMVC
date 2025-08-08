@@ -1,4 +1,5 @@
 using cungLaoDong.Areas.Jobs.Models;
+using cungLaoDong.Models;
 
 namespace cungLaoDong.Areas.Employees.ViewModels;
 
