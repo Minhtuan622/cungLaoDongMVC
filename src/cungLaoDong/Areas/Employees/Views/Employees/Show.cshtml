@@ -1,4 +1,4 @@
-@model cungLaoDong.Models.ViewModels.Employee.ShowEmployeeViewModel
+@model cungLaoDong.Areas.Employees.ViewModels.ShowEmployeeViewModel
 
 @{
     ViewBag.Title = "title";
@@ -8,7 +8,7 @@
 <!-- Page Heading -->
 <div class="d-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-2 text-gray-800">Thông tin chi tiết</h1>
-    <a asp-controller="Employees" asp-action="Add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+    <a asp-area="Employees" asp-controller="Employees" asp-action="Add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         <i class="fas fa-pen fa-sm text-white-50 me-1"></i>
         Chỉnh sửa
     </a>

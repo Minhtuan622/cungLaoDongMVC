@@ -1,17 +1,16 @@
-@model cungLaoDong.Models.ViewModels.Employee.EmployeeFormViewModel
+@model cungLaoDong.Areas.Employees.ViewModels.EmployeeFormViewModel
 
 @{
-    ViewBag.Title = "Chỉnh sửa người lao động";
+    ViewBag.Title = "Thêm mới người lao động";
     Layout = "_Layout";
 }
 
-<form asp-action="Edit" asp-controller="Employees" method="post">
-    <input type="hidden" asp-for="EmployeeForm.Id" />
+<form asp-action="Add" method="post">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <div class="d-flex align-items-center justify-content-between">
                 <h6 class="m-0 fw-bold text-primary">Vui lòng điền đầy đủ thông tin bên dưới</h6>
-                <a asp-controller="Home" asp-action="Index"
+                <a asp-area="" asp-controller="Home" asp-action="Index"
                    class="d-none d-sm-inline-block text-white text-decoration-none">
                     <i class="fas fa-download fa-sm me-1"></i>Hủy
                 </a>
@@ -40,7 +39,7 @@
                             Giới tính <span class="text-danger">*</span>
                         </label>
                         <select asp-for="EmployeeForm.Gender" class="form-select" required>
-                            <option value="" disabled>-- Chọn giới tính --</option>
+                            <option value="" disabled selected>-- Chọn giới tính --</option>
                             <option value="true">Nam</option>
                             <option value="false">Nữ</option>
                         </select>
@@ -71,7 +70,7 @@
                                                "Id",
                                                "Name"))"
                                 class="form-select">
-                                <option value="" disabled>-- Chọn --</option>
+                                <option value="" disabled selected>-- Chọn --</option>
                             </select>
                             <span asp-validation-for="EmployeeForm.PermanentProvince" class="text-danger"></span>
                         </div>
@@ -99,7 +98,7 @@
                                                "Id",
                                                "Name"))"
                                 class="form-select">
-                                <option value="" disabled>-- Chọn --</option>
+                                <option value="" disabled selected>-- Chọn --</option>
                             </select>
                             <span asp-validation-for="EmployeeForm.PermanentWard" class="text-danger"></span>
                         </div>
@@ -132,7 +131,7 @@
                                                "Id",
                                                "Name"))"
                                 class="form-select">
-                                <option value="" disabled>-- Chọn --</option>
+                                <option value="" disabled selected>-- Chọn --</option>
                             </select>
                             <span asp-validation-for="EmployeeForm.TemporaryResidenceProvince" class="text-danger"></span>
                         </div>
@@ -160,7 +159,7 @@
                                                "Id",
                                                "Name"))"
                                 class="form-select">
-                                <option value="" disabled>-- Chọn --</option>
+                                <option value="" disabled selected>-- Chọn --</option>
                             </select>
                             <span asp-validation-for="EmployeeForm.TemporaryResidenceWard" class="text-danger"></span>
                         </div>
@@ -177,25 +176,19 @@
                 <div class="row">
                     <div class="col-lg-4 mb-3">
                         <div class="form-check">
-                            @Html.CheckBox("PriorityKinds",
-                                                        Model.SelectedPriorityKinds?.Contains(1),
-                                                        new { @class = "form-check-input", id = "khuyet_tat", value = "1" })
+                            <input type="checkbox" class="form-check-input" name="PriorityKinds" value="1" id="khuyet_tat">
                             <label class="form-check-label" for="khuyet_tat">Người khuyết tật</label>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
                         <div class="form-check">
-                            @Html.CheckBox("PriorityKinds",
-                                                        Model.SelectedPriorityKinds?.Contains(2),
-                                                        new { @class = "form-check-input", id = "ho_ngheo", value = "2" })
+                            <input type="checkbox" class="form-check-input" name="PriorityKinds" value="2" id="ho_ngheo">
                             <label class="form-check-label" for="ho_ngheo">Thuộc hộ nghèo, cận nghèo</label>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
                         <div class="form-check">
-                            @Html.CheckBox("PriorityKinds", 
-                                Model.SelectedPriorityKinds?.Contains(3), 
-                                new { @class = "form-check-input", id = "dan_toc", value = "3" })
+                            <input type="checkbox" class="form-check-input" name="PriorityKinds" value="3" id="dan_toc">
                             <label class="form-check-label" for="dan_toc">Dân tộc thiểu số</label>
                         </div>
                     </div>
@@ -207,7 +200,7 @@
                         asp-items="@(new SelectList(Model.People, "Id", "Name"))"
                         class="form-select"
                         id="ten_dan_toc">
-                        <option value="" disabled>-- Chọn --</option>
+                        <option value="" disabled selected>-- Chọn --</option>
                     </select>
                     <span asp-validation-for="PriorityForm.PeopleId" class="text-danger"></span>
                 </div>
@@ -224,7 +217,7 @@
                             asp-for="GeneralEducationLevelsForm.EducationLevelId"
                             asp-items="@(new SelectList(Model.GeneralEducationLevels, "Id", "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="GeneralEducationLevelsForm.EducationLevelId" class="text-danger"></span>
                     </div>
@@ -236,7 +229,7 @@
                             asp-for="GeneralEducationLevelsForm.ProfessionalQualificationId"
                             asp-items="@(new SelectList(Model.ProfessionalQualifications, "Id", "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="GeneralEducationLevelsForm.ProfessionalQualificationId" class="text-danger"></span>
                     </div>
@@ -245,9 +238,9 @@
                         <select asp-for="GeneralEducationLevelsForm.MajorId" class="form-select" id="chuyen_nganh">
                             <option value="">-- Chọn (nếu có) --</option>
                             @foreach (var cap2 in Model.Majors
-                                          .Where(m => m.Level == 2)
-                                          .OrderBy(m => m.Code)
-                                          .ToList())
+                                              .Where(m => m.Level == 2)
+                                              .OrderBy(m => m.Code)
+                                              .ToList())
                             {
                                 var cap3List = Model.Majors
                                     .Where(m => m.Level == 3 && m.Code!.StartsWith(cap2.Code!.Trim()))
@@ -264,7 +257,7 @@
                                     {
                                         <option value="@cap3.Id">@cap3.Name</option>
                                     }
-                            </optgroup>
+                                </optgroup>
                             }
                         </select>
                         <span asp-validation-for="GeneralEducationLevelsForm.MajorId" class="text-danger"></span>
@@ -283,7 +276,7 @@
                         asp-items="@(new SelectList(Model.EconomyStatuses, "Id", "Name"))"
                         class="form-select"
                         id="tinh_trang_viec_lam">
-                        <option value="" disabled>-- Chọn --</option>
+                        <option value="" disabled selected>-- Chọn --</option>
                     </select>
                     <span asp-validation-for="EmployeeForm.EconomyStatus" class="text-danger"></span>
                 </div>
@@ -301,7 +294,7 @@
                             asp-for="HasJobForm.JobPositionId"
                             asp-items="@(new SelectList(Model.JobPositions, "Id", "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="HasJobForm.JobPositionId" class="text-danger"></span>
                     </div>
@@ -310,7 +303,7 @@
                             Công việc cụ thể <span class="text-danger">*</span>
                         </label>
                         <select asp-for="HasJobForm.JobId" class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                             @foreach (var cap2 in Model.Jobs
                                           .Where(m => m.Level == 2)
                                           .OrderBy(m => m.Code)
@@ -331,7 +324,7 @@
                                     {
                                         <option value="@cap3.Id">@cap3.Name</option>
                                     }
-                            </optgroup>
+                                </optgroup>
                             }
                         </select>
                         <span asp-validation-for="HasJobForm.JobId" class="text-danger"></span>
@@ -350,7 +343,7 @@
                                            "Id",
                                            "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="HasJobForm.AddressProvince" class="text-danger"></span>
                     </div>
@@ -368,7 +361,7 @@
                                            "Id",
                                            "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="HasJobForm.AddressWeird" class="text-danger"></span>
                     </div>
@@ -393,13 +386,12 @@
                             asp-for="UnemployedForm.TimeId"
                             asp-items="@(new SelectList(Model.UnemployedTimes, "Id", "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="UnemployedForm.TimeId" class="text-danger"></span>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label asp-for="UnemployedForm.Demand" class="form-label fw-bold">Nhu cầu việc làm
-                            <span
+                        <label asp-for="UnemployedForm.Demand" class="form-label fw-bold">Nhu cầu việc làm <span
                                 class="text-danger">*</span></label>
                         <input asp-for="UnemployedForm.Demand" class="form-control" required>
                         <span asp-validation-for="UnemployedForm.Demand" class="text-danger"></span>
@@ -424,7 +416,7 @@
                         asp-items="@(new SelectList(Model.UnemployedReasons, "Id", "Name"))"
                         class="form-select"
                         id="ly_do">
-                        <option value="" disabled>-- Chọn --</option>
+                        <option value="" disabled selected>-- Chọn --</option>
                     </select>
                     <span asp-validation-for="EmployeeForm.UnemployedReason" class="text-danger"></span>
                 </div>
@@ -441,7 +433,7 @@
                             asp-for="StudyingForm.EducationLevel"
                             asp-items="@(new SelectList(Model.EducationLevels, "Id", "Name"))"
                             class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                         </select>
                         <span asp-validation-for="StudyingForm.EducationLevel" class="text-danger"></span>
                     </div>
@@ -450,11 +442,11 @@
                             Chuyên ngành đào tạo <span class="text-danger">*</span>
                         </label>
                         <select asp-for="StudyingForm.MajorId" class="form-select">
-                            <option value="" disabled>-- Chọn --</option>
+                            <option value="" disabled selected>-- Chọn --</option>
                             @foreach (var cap2 in Model.Majors
-                                          .Where(m => m.Level == 2)
-                                          .OrderBy(m => m.Code)
-                                          .ToList())
+                                              .Where(m => m.Level == 2)
+                                              .OrderBy(m => m.Code)
+                                              .ToList())
                             {
                                 var cap3List = Model.Majors
                                     .Where(m => m.Level == 3 && m.Code!.StartsWith(cap2.Code!.Trim()))
@@ -471,14 +463,14 @@
                                     {
                                         <option value="@cap3.Id">@cap3.Name</option>
                                     }
-                            </optgroup>
+                                </optgroup>
                             }
                             <span asp-validation-for="StudyingForm.MajorId" class="text-danger"></span>
                         </select>
                     </div>
                     <div class="col-lg-4 mb-3">
                         <label asp-for="StudyingForm.GraduateTime" class="form-label fw-bold">
-                            Thời gian dự kiến tốt nghiệp <span class="text-danger">*</span>
+                            Thời gian dự kiến tốt nghiệp <span  class="text-danger">*</span>
                         </label>
                         <input asp-for="StudyingForm.GraduateTime" type="date" class="form-control" id="ngay_tot_nghiep" required>
                         <span asp-validation-for="StudyingForm.GraduateTime" class="text-danger"></span>

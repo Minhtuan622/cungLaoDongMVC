@@ -1,4 +1,6 @@
-namespace cungLaoDong.Models.ViewModels.Employee;
+using cungLaoDong.Areas.Employees.Models;
+
+namespace cungLaoDong.Areas.Employees.ViewModels;
 
 public class CreateEmployeeViewModel
 {

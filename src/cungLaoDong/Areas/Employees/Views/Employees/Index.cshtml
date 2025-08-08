@@ -1,4 +1,4 @@
-@model IEnumerable<cungLaoDong.Models.ViewModels.Employee.EmployeeInfoViewModel>
+@model IEnumerable<cungLaoDong.Areas.Employees.ViewModels.EmployeeInfoViewModel>
 
 @{
     ViewBag.Title = "Quản lý người lao động";
@@ -30,7 +30,7 @@
                         </button>
                     </li>
                     <li>
-                        <a class="dropdown-item py-2" asp-controller="Employees" asp-action="Add">
+                        <a class="dropdown-item py-2" asp-area="Employees" asp-controller="Employees" asp-action="Add">
                             &plus; Thêm mới
                         </a>
                     </li>
@@ -88,15 +88,15 @@
                                             <i class="fas fa-bars"></i>
                                         </button>
                                         <ul class="dropdown-menu animated--fade-in" aria-labelledby="dropdownActionBtn">
-                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Show" asp-route-id="@employee.Id">Xem</a></li>
-                                            <li><a class="dropdown-item" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">Sửa</a></li>
+                                            <li><a class="dropdown-item" asp-area="Employees" asp-controller="Employees" asp-action="Show" asp-route-id="@employee.Id">Xem</a></li>
+                                           <li><a class="dropdown-item" asp-area="Employees" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">Sửa</a></li>
                                             <button
                                                 type="button"
                                                 class="dropdown-item text-danger"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#deleteConfirmModal"
                                                 data-id="@employee.Id"
-                                                data-url="@Url.Action("Delete", "Employees", new { id = employee.Id })">
+                                                data-url="@Url.Action("Delete", "Employees", new { id = employee.Id, area = "Employees" })">
                                                 Xóa
                                             </button>
                                         </ul>

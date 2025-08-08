@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cungLaoDong.Models;
+namespace cungLaoDong.Areas.Employees.Models;
 
 [Table("cung_nguoi_that_nghiep")]
 public class UnemployedFormModel

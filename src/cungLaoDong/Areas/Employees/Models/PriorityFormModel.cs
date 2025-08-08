@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cungLaoDong.Models;
+namespace cungLaoDong.Areas.Employees.Models;
 
 [Table("cung_nhom_uu_tien")]
 public class PriorityFormModel
