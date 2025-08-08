@@ -100,7 +100,7 @@
             </a>
             <div id="accountManagement" class="collapse" data-bs-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" asp-controller="AccountManagement" asp-action="Admin">Tài khoản Admin</a>
+                    <a class="collapse-item" asp-area="Accounts" asp-controller="AccountManagement" asp-action="Admin">Tài khoản Admin</a>
                 </div>
             </div>
         </li>
@@ -344,7 +344,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" asp-controller="Auth" asp-action="Login">Logout</a>
+                    <a class="btn btn-primary" asp-area="Accounts" asp-controller="Auth" asp-action="Login">Logout</a>
                 </div>
             </div>
         </div>

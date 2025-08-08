@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace cungLaoDong.Controllers;
+namespace cungLaoDong.Areas.Accounts.Controllers;
 
+[Area("Accounts")]
 public class AccountManagementController : Controller
 {
     // GET

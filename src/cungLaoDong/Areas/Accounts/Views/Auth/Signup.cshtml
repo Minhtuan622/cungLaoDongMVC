@@ -36,7 +36,7 @@
                                id="exampleRepeatPassword" placeholder="Repeat Password">
                     </div>
                 </div>
-                <a asp-controller="Auth" asp-action="Login" class="btn btn-primary btn-user w-100">
+                <a asp-area="Accounts" asp-controller="Auth" asp-action="Login" class="btn btn-primary btn-user w-100">
                     Register Account
                 </a>
                 <hr>
@@ -49,10 +49,10 @@
             </form>
             <hr>
             <div class="text-center">
-                <a class="small" asp-controller="Auth" asp-action="ResetPassword">Forgot Password?</a>
+                <a class="small" asp-area="Accounts" asp-controller="Auth" asp-action="ResetPassword">Forgot Password?</a>
             </div>
             <div class="text-center">
-                <a class="small" asp-controller="Auth" asp-action="Login">Already have an account? Login!</a>
+                <a class="small" asp-area="Accounts" asp-controller="Auth" asp-action="Login">Already have an account? Login!</a>
             </div>
         </div>
     </div>
