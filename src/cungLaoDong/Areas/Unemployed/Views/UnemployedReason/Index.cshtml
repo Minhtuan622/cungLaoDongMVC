@@ -1,0 +1,115 @@
+@model List<UnemployedReasonModel>
+
+@{
+    ViewBag.Title = "Danh mục lý do không tham gia hoạt động kinh tế";
+    Layout = "_Layout";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
+            <a asp-controller="UnemployedReason" asp-action="Add" class="d-none d-sm-inline-block">
+                <i class="fas fa-download fa-sm text-white-50 pr-1"></i>
+                &plus; Thêm
+            </a>
+        </div>
+    </div>
+    <div class="card-body">A
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable">
+                <thead>
+                <tr class="text-primary">
+                    <th>#</th>
+                    <th>Tên</th>
+                    <th>Hành động</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <ul class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            asp-controller="UnemployedReason"
+                                            asp-action="Edit"
+                                            asp-route-id="@item.Id">
+                                            Sửa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="dropdown-item text-danger"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#deleteConfirmModal"
+                                            data-id="@item.Id"
+                                            data-url="@Url.Action("Delete", "UnemployedReason", new { area = "Unemployed", id = item.Id })">
+                                            Xóa
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal xác nhận xóa -->
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="deleteConfirmModalLabel">Xác nhận xóa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa mục này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <form id="confirmDeleteForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.css" asp-append-version="true"/>
+}
+
+@section Scripts
+{
+    <script src="~/lib/datatables.net/dataTables.min.js"></script>
+    <script src="~/lib/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="~/js/demo/datatables-demo.js" asp-append-version="true"></script>
+    <script>
+        const deleteModal = document.getElementById('deleteConfirmModal');
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const url = button.getAttribute('data-url');
+
+            const form = deleteModal.querySelector('#confirmDeleteForm');
+            form.setAttribute('action', url);
+        });
+    </script>
+}
