@@ -17,257 +17,257 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = cungLaoDong
 build_property.RootNamespace = cungLaoDong
-build_property.ProjectDir = D:\coding_space\cungLaoDong\cungLaoDong\
+build_property.ProjectDir = D:\projectNet\CungLaoDong\cungLaoDong\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\coding_space\cungLaoDong\cungLaoDong
+build_property.MSBuildProjectDirectory = D:\projectNet\CungLaoDong\cungLaoDong
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/AccountManagement/AddAdmin.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/AccountManagement/AddAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudE1hbmFnZW1lbnRcQWRkQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/AccountManagement/Admin.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/AccountManagement/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudE1hbmFnZW1lbnRcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Auth/Login.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Auth/ResetPassword.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Auth/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Auth/Signup.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Auth/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/BusinessIndustry/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/BusinessIndustry/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/BusinessIndustry/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/BusinessIndustry/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NJbmR1c3RyeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Chats/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Chats/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EconomyStatus/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EconomyStatus/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWNvbm9teVN0YXR1c1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EconomyStatus/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EconomyStatus/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWNvbm9teVN0YXR1c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EconomyStatus/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EconomyStatus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWNvbm9teVN0YXR1c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EducationLevel/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EducationLevel/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uTGV2ZWxcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EducationLevel/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EducationLevel/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uTGV2ZWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/EducationLevel/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/EducationLevel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uTGV2ZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Employees/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Employees/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Employees/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Employees/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Employees/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Employees/Show.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Employees/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbEVkdWNhdGlvbkxldmVsXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbEVkdWNhdGlvbkxldmVsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/GeneralEducationLevel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbEVkdWNhdGlvbkxldmVsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Home/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/JobPosition/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/JobPosition/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iUG9zaXRpb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/JobPosition/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/JobPosition/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iUG9zaXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/JobPosition/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/JobPosition/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iUG9zaXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Jobs/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Jobs/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Jobs/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Jobs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Jobs/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Jobs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Major/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Major/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFqb3JcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Major/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Major/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFqb3JcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Major/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Major/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFqb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Modules/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Modules/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Modules/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Modules/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/ProfessionalQualifications/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc2lvbmFsUXVhbGlmaWNhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Profile/ActivityLog.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Profile/ActivityLog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBY3Rpdml0eUxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Profile/ChangePassword.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Profile/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Profile/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Profile/Update.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Profile/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Roles/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Roles/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Roles/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Shared/Error.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Shared/_AuthLayout.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Shared/_LoginPartial.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Statistics/Reports.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Statistics/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedReason/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedReason/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedReason/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedReason/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFJlYXNvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedStatus/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedStatus/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFN0YXR1c1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedStatus/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedStatus/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFN0YXR1c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedStatus/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedStatus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFN0YXR1c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Add.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedTime/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Edit.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedTime/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/UnemployedTime/Index.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/UnemployedTime/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5lbXBsb3llZFRpbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/_ViewImports.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/_ViewStart.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/coding_space/cungLaoDong/cungLaoDong/Views/Shared/_Layout.cshtml]
+[D:/projectNet/CungLaoDong/cungLaoDong/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qronm26a4v

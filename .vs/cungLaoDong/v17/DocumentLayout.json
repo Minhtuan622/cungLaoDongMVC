@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\coding_space\\cungLaoDong\\",
+  "WorkspaceRootPath": "D:\\projectNet\\CungLaoDong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\views\\employees\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\projectnet\\cunglaodong\\cunglaodong\\views\\employees\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\views\\employees\\show.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\coding_space\\cunglaodong\\cunglaodong\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|d:\\projectnet\\cunglaodong\\cunglaodong\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FBA166A-AE2B-48D8-ACDF-B550180D9C72}|cungLaoDong\\cungLaoDong.csproj|solutionrelative:cunglaodong\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Show.cshtml",
-              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Show.cshtml",
+              "DocumentMoniker": "D:\\projectNet\\CungLaoDong\\cungLaoDong\\Views\\Employees\\Show.cshtml",
               "RelativeDocumentMoniker": "cungLaoDong\\Views\\Employees\\Show.cshtml",
-              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Views\\Employees\\Show.cshtml",
+              "ToolTip": "D:\\projectNet\\CungLaoDong\\cungLaoDong\\Views\\Employees\\Show.cshtml",
               "RelativeToolTip": "cungLaoDong\\Views\\Employees\\Show.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-08T02:03:31.086Z",
               "EditorCaption": ""
@@ -41,14 +41,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "EmployeesController.cs",
-              "DocumentMoniker": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
+              "DocumentMoniker": "D:\\projectNet\\CungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "cungLaoDong\\Controllers\\EmployeesController.cs",
-              "ToolTip": "D:\\coding_space\\cungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\projectNet\\CungLaoDong\\cungLaoDong\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "cungLaoDong\\Controllers\\EmployeesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T02:03:26.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T02:03:26.65Z"
             }
           ]
         }
