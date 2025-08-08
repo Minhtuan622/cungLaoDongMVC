@@ -1,7 +1,7 @@
 // Load dữ liệu từ API
 function loadEmployees() {
     $.ajax({
-        url: '/Employees/GetEmployees',
+        url: '/Employees/Employees/GetEmployees',
         type: 'GET',
         dataType: 'json',
         success: function(response) {
@@ -22,7 +22,7 @@ function loadEmployees() {
 // Load dữ liệu với filter từ server
 function loadEmployeesWithFilter(filterData) {
     $.ajax({
-        url: '/Employees/FilterEmployees',
+        url: '/Employees/Employees/FilterEmployees',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(filterData),
@@ -90,8 +90,8 @@ function displayLaborList(data) {
                             <i class="fas fa-bars"></i>
                         </button>
                         <ul class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="/Employees/Show/${labor.id}">Xem</a></li>
-                            <li><a class="dropdown-item" href="/Employees/Edit/${labor.id}">Sửa</a></li>
+                            <li><a class="dropdown-item" href="/Employees/Employees/Show/${labor.id}">Xem</a></li>
+                            <li><a class="dropdown-item" href="/Employees/Employees/Edit/${labor.id}">Sửa</a></li>
                             <li><a class="dropdown-item text-danger" href="#" onclick="deleteEmployee(${labor.id})">Xóa</a></li>
                         </ul>
                     </div>
@@ -137,7 +137,7 @@ function applyCustomFilter() {
 function deleteEmployee(id) {
     if (confirm('Bạn có chắc chắn muốn xóa người lao động này?')) {
         $.ajax({
-            url: `/Employees/Delete/${id}`,
+            url: `/Employees/Employees/Delete/${id}`,
             type: 'POST',
             success: function(response) {
                 if (response.success) {
